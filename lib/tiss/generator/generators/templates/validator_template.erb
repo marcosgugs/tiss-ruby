@@ -1,0 +1,60 @@
+module Tiss::<%= version %>::Validator
+  class <%= name %>
+    TYPE = <%= type %>
+    <% unless ws_action.nil? %>
+    WS_ACTION = <%= ws_action %>
+    <% end %>
+    ENUM_VALUES = <%= enum_values %>
+    <% unless pattern.nil? %>
+      PATTERN = "<%= pattern %>"
+      REGEXP = Regexp.new("^<%= pattern %>$")
+    <% end %>
+
+    def validate_each(record, attribute, value)
+      validate_type record, attribute, value
+      handle_whitespaces record, attribute, value
+      unless self.class::ENUM_VALUES.empty?
+        validate_enumeration record, attribute, value
+      end
+      if self.class.const_defined? 'REGEXP'
+        validate_regexp record, attribute, value
+      end
+    end
+
+    private
+
+    def validate_type(record, attribute, value)
+      unless value.is_a? self.class::TYPE
+        add_error record, attribute, "#{value}: not a #{self.class::TYPE}"
+      end
+    end
+
+    def handle_whitespaces(record, attribute, value)
+      if self.class.const_defined? 'WS_ACTION'
+        case self.class::WS_ACTION
+        when 'replace' then value.gsub! /[\n\t\r ]/, ' '
+        when 'collapse' then
+          value.gsub! /[\n\t\r]/, ' '
+          value = value.split.join ' '
+        end
+        record.send "#{attribute}=", value
+      end
+    end
+
+    def validate_enumeration(record, attribute, value)
+      unless self.class::ENUM_VALUES.include? value.to_s
+        add_error record, attribute, "#{value}: not in #{self.class::ENUM_VALUES}"
+      end
+    end
+
+    def validate_regexp(record, attribute, value)
+      unless value =~ self.class::REGEXP
+        add_error record, attribute, "#{value}: not matching #{self.class::PATTERN}"
+      end
+    end
+
+    def add_error(record, attribute, message = '')
+      record.errors[attribute] << (options[:message] || message)
+    end
+  end
+end
