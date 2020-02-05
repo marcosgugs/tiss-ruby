@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class Epilogo < Base
+    # @type: String
+
     attribute :hash
   end
 end

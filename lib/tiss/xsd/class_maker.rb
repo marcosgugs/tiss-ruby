@@ -22,10 +22,10 @@ module ClassMaker
       type = attrs['type'].value if attrs.key? 'type'
       if type.nil?
         complex_node = select_children(node, 'complexType').first
-        define_class name, complex_node, target
-        { name: name, type: nil }
+        defined_class_name = define_class name, complex_node, target
+        { name: name, type: defined_class_name }
       else
-        { name: name, type: type }
+        { name: name, type: sanitize_class_name(type.split(':').last) }
       end
     elsif is_simple node
       unless name.nil?
@@ -67,9 +67,13 @@ module ClassMaker
     is_xml_schema_node(node) && (node.name == 'complexType')
   end
 
-  def define_class(name, node, _target)
+  def sanitize_class_name(name)
     name = underscore(name)
-    name = camelize(name.to_s.sub(/.*\./, ''))
+    camelize(name.to_s.sub(/.*\./, ''))
+  end
+
+  def define_class(name, node, _target)
+    name = sanitize_class_name(name)
 
     elems = []
     unless node.nil?

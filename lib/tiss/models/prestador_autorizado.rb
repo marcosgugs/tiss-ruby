@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class PrestadorAutorizado < Base
+    # @type: CtContratadoDados
+
     attribute :dadosContratado
+
+    # @type: StTexto7
 
     attribute :cnesContratado
   end

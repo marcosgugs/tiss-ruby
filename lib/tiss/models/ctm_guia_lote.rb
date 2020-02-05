@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class CtmGuiaLote < Base
+    # @type: StTexto12
+
     attribute :numeroLote
+
+    # @type:
 
     attribute :guiasTISS
   end

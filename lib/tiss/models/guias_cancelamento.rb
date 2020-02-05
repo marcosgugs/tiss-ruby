@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class GuiasCancelamento < Base
+    # @type: StTexto20
+
     attribute :numeroGuiaPrestador
+
+    # @type: StTexto20
 
     attribute :numeroGuiaOperadora
   end

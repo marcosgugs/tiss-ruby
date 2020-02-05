@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class CtHipoteseDiagnostica < Base
+    # @type: CtDiagnostico
+
     attribute :diagnostico
+
+    # @type: DmIndicadorAcidente
 
     attribute :indicacaoAcidente
   end

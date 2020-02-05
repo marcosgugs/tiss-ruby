@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class PeriodoProc < Base
+    # @type: StData
+
     attribute :datainicio
+
+    # @type: StData
 
     attribute :datafim
   end

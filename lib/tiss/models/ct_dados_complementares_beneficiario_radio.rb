@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class CtDadosComplementaresBeneficiarioRadio < Base
+    # @type: StNumerico3
+
     attribute :idade
+
+    # @type: DmSexo
 
     attribute :sexo
   end

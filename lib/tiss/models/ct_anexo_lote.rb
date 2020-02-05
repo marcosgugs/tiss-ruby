@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class CtAnexoLote < Base
+    # @type: StTexto12
+
     attribute :numeroLote
+
+    # @type:
 
     attribute :AnexosGuiasTISS
   end

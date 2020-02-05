@@ -7,7 +7,6 @@ module Tiss::Generator
     def self.append(version, name, attributes)
       model = ModelGenerator::MODELS[name.to_sym] || {}
       model[:attributes] = [] unless model[:attributes].present?
-      ap attributes
       model[:attributes] = model[:attributes] + attributes.compact.map { |item| item.merge(version: version) }
 
       ModelGenerator::MODELS[name.to_sym] = model

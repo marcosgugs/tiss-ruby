@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class Opm < Base
+    # @type: IdentificacaoOpm
+
     attribute :identificacaoOPM
   end
 end

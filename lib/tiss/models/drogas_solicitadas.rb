@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class DrogasSolicitadas < Base
+    # @type: CtDrogasSolicitadas
+
     attribute :drogaSolicitada
   end
 end

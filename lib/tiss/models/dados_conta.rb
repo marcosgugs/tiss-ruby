@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class DadosConta < Base
+    # @type:
+
     attribute :dadosProtocolo
   end
 end

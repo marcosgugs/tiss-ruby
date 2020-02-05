@@ -3,6 +3,7 @@ module Tiss::Model
     <% attributes.each_key do |key| %>
     <% attr_versions = attributes[key].map{|attr| attr[:version]} %>
     <% versions = Tiss.config.available_versions - attr_versions %>
+      # @type: <%= attributes[key].first[:type] %>
       <% if versions.any? && versions.count > 4 %>
         attribute :<%= key %>, only: %w[<%= attr_versions.join(' ') %>]
       <% elsif versions.any? && versions.count <= 4 %>

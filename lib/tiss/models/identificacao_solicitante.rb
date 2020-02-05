@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class IdentificacaoSolicitante < Base
+    # @type: CtContratadoDados
+
     attribute :dadosDoContratado
+
+    # @type: CtContratadoProfissionalDados
 
     attribute :dadosProfissionalContratado
   end

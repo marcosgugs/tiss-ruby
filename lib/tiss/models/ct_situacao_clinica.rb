@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class CtSituacaoClinica < Base
+    # @type: Dentes
+
     attribute :dentes
   end
 end

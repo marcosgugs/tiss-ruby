@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class ServicosAutorizados < Base
+    # @type: CtProcedimentoAutorizado
+
     attribute :servicoAutorizado
   end
 end

@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class CtCreditoOdonto < Base
+    # @type: StDecimal82
+
     attribute :valorCredito
+
+    # @type: StTexto40
 
     attribute :descricao
   end

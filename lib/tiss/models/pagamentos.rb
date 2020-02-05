@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class Pagamentos < Base
+    # @type: PagamentosPorData
+
     attribute :pagamentosPorData
   end
 end

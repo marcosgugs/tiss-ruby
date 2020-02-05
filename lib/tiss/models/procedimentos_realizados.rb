@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class ProcedimentosRealizados < Base
+    # @type:
+
     attribute :procedimentoRealizado
   end
 end

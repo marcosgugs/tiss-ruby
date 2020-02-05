@@ -2,7 +2,11 @@
 
 module Tiss::Model
   class CtProtocoloSolicitacaoStatus < Base
+    # @type: CtContratadoDados
+
     attribute :dadosPrestador
+
+    # @type: StTexto12
 
     attribute :numeroProtocolo
   end

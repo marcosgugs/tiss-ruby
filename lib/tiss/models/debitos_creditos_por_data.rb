@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class DebitosCreditosPorData < Base
+    # @type: CtDescontos
+
     attribute :debitosCreditos
   end
 end

@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class DadosResumo < Base
+    # @type: CtDadosResumoDemonstrativo
+
     attribute :relacaoProtocolos
   end
 end

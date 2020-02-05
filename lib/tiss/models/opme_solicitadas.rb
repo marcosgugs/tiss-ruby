@@ -2,6 +2,8 @@
 
 module Tiss::Model
   class OpmeSolicitadas < Base
+    # @type: OpmeSolicitada
+
     attribute :opmeSolicitada
   end
 end

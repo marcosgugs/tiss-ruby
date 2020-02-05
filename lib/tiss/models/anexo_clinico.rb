@@ -2,9 +2,15 @@
 
 module Tiss::Model
   class AnexoClinico < Base
+    # @type: CtmAnexoSolicitacaoQuimio
+
     attribute :solicitacaoQuimioterapia
 
+    # @type: CtmAnexoSolicitacaoRadio
+
     attribute :solicitacaoRadioterapia
+
+    # @type: CtmAnexoSolicitacaoOpme
 
     attribute :solicitacaoOPME
   end
