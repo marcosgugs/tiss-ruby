@@ -3,31 +3,24 @@
 module Tiss::Model
   class CtmDemonstrativoAnaliseConta < Base
     # @type: CtDemonstrativoCabecalho
-
-    attribute :cabecalhoDemonstrativo
+    attr_accessor :cabecalhoDemonstrativo
 
     # @type: DadosPrestador
-
-    attribute :dadosPrestador
+    attr_accessor :dadosPrestador
 
     # @type: DadosConta
-
-    attribute :dadosConta
-
-    # @type: StDecimal102
-
-    attribute :valorInformadoGeral
+    attr_accessor :dadosConta
 
     # @type: StDecimal102
-
-    attribute :valorProcessadoGeral
-
-    # @type: StDecimal102
-
-    attribute :valorLiberadoGeral
+    attr_accessor :valorInformadoGeral
 
     # @type: StDecimal102
+    attr_accessor :valorProcessadoGeral
 
-    attribute :valorGlosaGeral
+    # @type: StDecimal102
+    attr_accessor :valorLiberadoGeral
+
+    # @type: StDecimal102
+    attr_accessor :valorGlosaGeral
   end
 end

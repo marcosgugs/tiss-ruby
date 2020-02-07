@@ -3,55 +3,42 @@
 module Tiss::Model
   class DadosPagamentoGuia < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
+    attr_accessor :numeroGuiaPrestador
 
     # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
+    attr_accessor :numeroGuiaOperadora
 
     # @type: DmSimNao
-
-    attribute :recurso
+    attr_accessor :recurso
 
     # @type: StTexto70
-
-    attribute :nomeExecutante
+    attr_accessor :nomeExecutante
 
     # @type: StTexto20
-
-    attribute :carteiraBeneficiario
+    attr_accessor :carteiraBeneficiario
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: DadosPagamento
-
-    attribute :dadosPagamento
+    attr_accessor :dadosPagamento
 
     # @type: StTexto500
-
-    attribute :observacaoGuia
-
-    # @type: StDecimal82
-
-    attribute :valorTotalInformadoGuia
+    attr_accessor :observacaoGuia
 
     # @type: StDecimal82
-
-    attribute :valorTotalProcessadoGuia
-
-    # @type: StDecimal82
-
-    attribute :valorTotalGlosaGuia
+    attr_accessor :valorTotalInformadoGuia
 
     # @type: StDecimal82
-
-    attribute :valorTotalFranquiaGuia
+    attr_accessor :valorTotalProcessadoGuia
 
     # @type: StDecimal82
+    attr_accessor :valorTotalGlosaGuia
 
-    attribute :valorTotalLiberadoGuia
+    # @type: StDecimal82
+    attr_accessor :valorTotalFranquiaGuia
+
+    # @type: StDecimal82
+    attr_accessor :valorTotalLiberadoGuia
   end
 end

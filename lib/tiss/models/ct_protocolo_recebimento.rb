@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtProtocoloRecebimento < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: CtContratadoDados
-
-    attribute :dadosPrestador
+    attr_accessor :dadosPrestador
 
     # @type: StTexto12
-
-    attribute :numeroLote
+    attr_accessor :numeroLote
 
     # @type: StData
-
-    attribute :dataEnvioLote
+    attr_accessor :dataEnvioLote
 
     # @type: CtProtocoloDetalhe
-
-    attribute :detalheProtocolo
+    attr_accessor :detalheProtocolo
   end
 end

@@ -3,11 +3,9 @@
 module Tiss::Model
   class CtMotivoGlosa < Base
     # @type: DmTipoGlosa
-
-    attribute :codigoGlosa
+    attr_accessor :codigoGlosa
 
     # @type: StTexto500
-
-    attribute :descricaoGlosa
+    attr_accessor :descricaoGlosa
   end
 end

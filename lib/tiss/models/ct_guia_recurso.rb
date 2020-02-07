@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtGuiaRecurso < Base
     # @type: StTexto12
-
-    attribute :numeroProtocolo
+    attr_accessor :numeroProtocolo
 
     # @type: StTexto12
-
-    attribute :numDemoAnalisePagto
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaRecurso
+    attr_accessor :numDemoAnalisePagto
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaRecurso
 
-    attribute :numeroGuiaOrigem
+    # @type: StTexto20
+    attr_accessor :numeroGuiaOrigem
 
     # @type: CtMotivoGlosa
-
-    attribute :motivosGlosa
+    attr_accessor :motivosGlosa
   end
 end

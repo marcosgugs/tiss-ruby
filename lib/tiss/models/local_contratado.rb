@@ -3,15 +3,12 @@
 module Tiss::Model
   class LocalContratado < Base
     # @type:
-
-    attribute :codigoContratado
+    attr_accessor :codigoContratado
 
     # @type: StTexto70
-
-    attribute :nomeContratado
+    attr_accessor :nomeContratado
 
     # @type: StTexto7
-
-    attribute :cnes
+    attr_accessor :cnes
   end
 end

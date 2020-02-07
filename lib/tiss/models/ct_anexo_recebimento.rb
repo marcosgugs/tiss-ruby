@@ -3,35 +3,27 @@
 module Tiss::Model
   class CtAnexoRecebimento < Base
     # @type: StTexto12
-
-    attribute :nrProtocoloRecebimento
+    attr_accessor :nrProtocoloRecebimento
 
     # @type: StData
-
-    attribute :dataEnvioAnexo
+    attr_accessor :dataEnvioAnexo
 
     # @type: StTexto12
-
-    attribute :numeroLote
+    attr_accessor :numeroLote
 
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: CtContratadoDados
-
-    attribute :dadosPrestador
+    attr_accessor :dadosPrestador
 
     # @type: StNumerico3
-
-    attribute :qtAnexosClinicos
+    attr_accessor :qtAnexosClinicos
 
     # @type: AnexosClinicos
-
-    attribute :anexosClinicos
+    attr_accessor :anexosClinicos
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
   end
 end

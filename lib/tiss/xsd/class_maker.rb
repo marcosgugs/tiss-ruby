@@ -77,19 +77,30 @@ module ClassMaker
 
     elems = []
     unless node.nil?
-      sequence = select_children node, 'sequence'
-      choices = select_children sequence.first, 'choice' unless sequence.empty?
-      elems = select_children sequence.first, 'element' unless sequence.empty?
-      unless sequence.empty? || choices.empty?
+      parent_node = select_children(node, 'sequence')
+      parent_node = select_children(node, 'choice') unless parent_node.empty?
+
+      choices = []
+      choices = select_children parent_node.first, 'choice' unless parent_node.empty?
+
+      elems = select_children parent_node, 'element' unless parent_node
+      unless parent_node.empty? || choices.empty?
         elems += select_children choices.first, 'element'
       end
+
+      # sequence = select_children node, 'sequence'
+      # choices = select_children sequence.first, 'choice' unless sequence.empty?
+      # elems = select_children sequence.first, 'element' unless sequence.empty?
+      # unless sequence.empty? || choices.empty?
+      #   elems += select_children choices.first, 'element'
+      # end
     end
 
     attributes = elems.map do |e|
       make_definition(e, self)
     end
 
-    return if attributes.blank?
+    # return if attributes.blank?
 
     Tiss::Generator::ModelGenerator.append(@version, name, attributes)
     name

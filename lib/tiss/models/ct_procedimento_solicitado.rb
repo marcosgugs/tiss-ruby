@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtProcedimentoSolicitado < Base
     # @type: CtProcedimentoDados
-
-    attribute :procedimento
+    attr_accessor :procedimento
 
     # @type: DmUnidadeMedida
-
-    attribute :unidadeMedida
+    attr_accessor :unidadeMedida
 
     # @type: StNumerico3
-
-    attribute :quantidadeSolicitada
+    attr_accessor :quantidadeSolicitada
   end
 end

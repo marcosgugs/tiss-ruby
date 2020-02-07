@@ -3,27 +3,27 @@
 module Tiss::Model
   class DiagnosticoOncologicoQuimioterapia < Base
     # @type: CtDiagnosticoOncologico
-
-    attribute :diagQuimio
+    attr_accessor :diagQuimio
 
     # @type: DmTipoQuimioterapia
-
-    attribute :tipoQuimioterapia
+    attr_accessor :tipoQuimioterapia
 
     # @type: StTexto1000
-
-    attribute :planoTerapeutico
+    attr_accessor :planoTerapeutico
 
     # @type: DmTumor
-
-    attribute :tumor, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attr_accessor :tumor
 
     # @type: DmNodulo
-
-    attribute :nodulo, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attr_accessor :nodulo
 
     # @type: DmMetastase
+    attr_accessor :metastase
 
-    attribute :metastase, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attribute_config :tumor, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+
+    attribute_config :nodulo, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+
+    attribute_config :metastase, unless: %w[V3_02_00 V3_02_01 V3_02_02]
   end
 end

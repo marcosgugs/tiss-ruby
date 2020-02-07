@@ -3,47 +3,38 @@
 module Tiss::Model
   class CtProcedimentoAutorizado < Base
     # @type: CtProcedimentoDados
-
-    attribute :procedimento
-
-    # @type: StNumerico3
-
-    attribute :quantidadeSolicitada
+    attr_accessor :procedimento
 
     # @type: StNumerico3
+    attr_accessor :quantidadeSolicitada
 
-    attribute :quantidadeAutorizada
-
-    # @type: StDecimal82
-
-    attribute :valorSolicitado
+    # @type: StNumerico3
+    attr_accessor :quantidadeAutorizada
 
     # @type: StDecimal82
+    attr_accessor :valorSolicitado
 
-    attribute :valorAutorizado
+    # @type: StDecimal82
+    attr_accessor :valorAutorizado
 
     # @type: DmOpcaoFabricante
-
-    attribute :opcaoFabricante
+    attr_accessor :opcaoFabricante
 
     # @type: StTexto15
-
-    attribute :registroANVISA
-
-    # @type: StTexto30
-
-    attribute :codigoRefFabricante
+    attr_accessor :registroANVISA
 
     # @type: StTexto30
+    attr_accessor :codigoRefFabricante
 
-    attribute :autorizacaoFuncionamento
+    # @type: StTexto30
+    attr_accessor :autorizacaoFuncionamento
 
     # @type: MotivosNegativa
-
-    attribute :motivosNegativa
+    attr_accessor :motivosNegativa
 
     # @type: StNumerico4
+    attr_accessor :sequencialItem
 
-    attribute :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[V3_04_00]
   end
 end

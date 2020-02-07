@@ -3,7 +3,6 @@
 module Tiss::Model
   class DebCredPorDataPagamento < Base
     # @type: CtDescontos
-
-    attribute :descontos
+    attr_accessor :descontos
   end
 end

@@ -3,31 +3,24 @@
 module Tiss::Model
   class CtDiagnosticoOncologico < Base
     # @type: StData
-
-    attribute :dataDiagnostico
+    attr_accessor :dataDiagnostico
 
     # @type: StTexto4
-
-    attribute :diagnosticoCID
+    attr_accessor :diagnosticoCID
 
     # @type: DmEstadiamento
-
-    attribute :estadiamento
+    attr_accessor :estadiamento
 
     # @type: DmFinalidadeTratamento
-
-    attribute :finalidade
+    attr_accessor :finalidade
 
     # @type: DmEcog
-
-    attribute :ecog
-
-    # @type: StTexto1000
-
-    attribute :diagnosticoHispatologico
+    attr_accessor :ecog
 
     # @type: StTexto1000
+    attr_accessor :diagnosticoHispatologico
 
-    attribute :infoRelevantes
+    # @type: StTexto1000
+    attr_accessor :infoRelevantes
   end
 end

@@ -3,19 +3,15 @@
 module Tiss::Model
   class TotaisBrutosPorData < Base
     # @type: StDecimal102
-
-    attribute :totalInformadoPorData
-
-    # @type: StDecimal102
-
-    attribute :totalProcessadoPorData
+    attr_accessor :totalInformadoPorData
 
     # @type: StDecimal102
-
-    attribute :totaLiberadoPorData
+    attr_accessor :totalProcessadoPorData
 
     # @type: StDecimal102
+    attr_accessor :totaLiberadoPorData
 
-    attribute :totalGlosaPorData
+    # @type: StDecimal102
+    attr_accessor :totalGlosaPorData
   end
 end

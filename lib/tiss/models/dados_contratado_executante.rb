@@ -3,15 +3,12 @@
 module Tiss::Model
   class DadosContratadoExecutante < Base
     # @type: StTexto14
-
-    attribute :codigonaOperadora
+    attr_accessor :codigonaOperadora
 
     # @type: StTexto70
-
-    attribute :nomeContratadoExecutante
+    attr_accessor :nomeContratadoExecutante
 
     # @type: StTexto7
-
-    attribute :cnesContratadoExecutante
+    attr_accessor :cnesContratadoExecutante
   end
 end

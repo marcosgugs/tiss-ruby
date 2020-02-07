@@ -3,59 +3,51 @@
 module Tiss::Model
   class CtmInternacaoSolicitacaoGuia < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
+    attr_accessor :numeroGuiaPrestador
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: IdentificacaoSolicitante
-
-    attribute :identificacaoSolicitante
+    attr_accessor :identificacaoSolicitante
 
     # @type: DadosHospitalSolicitado
-
-    attribute :dadosHospitalSolicitado
+    attr_accessor :dadosHospitalSolicitado
 
     # @type: DadosInternacao
-
-    attribute :dadosInternacao
+    attr_accessor :dadosInternacao
 
     # @type: HipotesesDiagnosticas
-
-    attribute :hipotesesDiagnosticas
+    attr_accessor :hipotesesDiagnosticas
 
     # @type: ProcedimentosSolicitados
-
-    attribute :procedimentosSolicitados
+    attr_accessor :procedimentosSolicitados
 
     # @type: StData
-
-    attribute :dataSolicitacao
+    attr_accessor :dataSolicitacao
 
     # @type: StTexto1000
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: AnexoClinico
-
-    attribute :anexoClinico
+    attr_accessor :anexoClinico
 
     # @type: DmAusenciaCodValidacao
-
-    attribute :ausenciaCodValidacao, only: %w[V3_04_00]
+    attr_accessor :ausenciaCodValidacao
 
     # @type: StTexto10
-
-    attribute :codValidacao, only: %w[V3_04_00]
+    attr_accessor :codValidacao
 
     # @type: DmEtapasAutorizacao
+    attr_accessor :tipoEtapaAutorizacao
 
-    attribute :tipoEtapaAutorizacao, only: %w[V3_04_00]
+    attribute_config :ausenciaCodValidacao, only: %w[V3_04_00]
+
+    attribute_config :codValidacao, only: %w[V3_04_00]
+
+    attribute_config :tipoEtapaAutorizacao, only: %w[V3_04_00]
   end
 end

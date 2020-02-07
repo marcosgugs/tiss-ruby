@@ -3,15 +3,12 @@
 module Tiss::Model
   class TotalLiquidoPorData < Base
     # @type: StDecimal102
-
-    attribute :valorTotalDebitosPorData
-
-    # @type: StDecimal102
-
-    attribute :valorTotalCreditosPorData
+    attr_accessor :valorTotalDebitosPorData
 
     # @type: StDecimal102
+    attr_accessor :valorTotalCreditosPorData
 
-    attribute :valorFinalAReceberPorData
+    # @type: StDecimal102
+    attr_accessor :valorFinalAReceberPorData
   end
 end

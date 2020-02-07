@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtValorTotal < Base
     # @type: StDecimal102
-
-    attribute :valorProcessado
-
-    # @type: StDecimal102
-
-    attribute :valorGlosa
+    attr_accessor :valorProcessado
 
     # @type: StDecimal102
+    attr_accessor :valorGlosa
 
-    attribute :valorLiberado
+    # @type: StDecimal102
+    attr_accessor :valorLiberado
   end
 end

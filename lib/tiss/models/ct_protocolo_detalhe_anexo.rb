@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtProtocoloDetalheAnexo < Base
     # @type: StTexto12
-
-    attribute :numeroProtocolo
+    attr_accessor :numeroProtocolo
 
     # @type: StDecimal102
-
-    attribute :valorTotalProtocolo
+    attr_accessor :valorTotalProtocolo
 
     # @type: CtMotivoGlosa
-
-    attribute :glosasProtocolo
+    attr_accessor :glosasProtocolo
 
     # @type: StDecimal102
-
-    attribute :vlGlosaProtocolo
+    attr_accessor :vlGlosaProtocolo
 
     # @type: CtGuiaDadosAnexo
-
-    attribute :dadosGuias
+    attr_accessor :dadosGuias
   end
 end

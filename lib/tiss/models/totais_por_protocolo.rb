@@ -3,23 +3,18 @@
 module Tiss::Model
   class TotaisPorProtocolo < Base
     # @type: StDecimal102
-
-    attribute :valorTotalInformadoPorProtocolo
-
-    # @type: StDecimal102
-
-    attribute :valorTotalProcessadoPorProtocolo
+    attr_accessor :valorTotalInformadoPorProtocolo
 
     # @type: StDecimal102
-
-    attribute :valorTotalGlosaPorProtocolo
-
-    # @type: StDecimal102
-
-    attribute :valorTotalFranquiaPorProtocolo
+    attr_accessor :valorTotalProcessadoPorProtocolo
 
     # @type: StDecimal102
+    attr_accessor :valorTotalGlosaPorProtocolo
 
-    attribute :valorTotalLiberadoPorProtocolo
+    # @type: StDecimal102
+    attr_accessor :valorTotalFranquiaPorProtocolo
+
+    # @type: StDecimal102
+    attr_accessor :valorTotalLiberadoPorProtocolo
   end
 end

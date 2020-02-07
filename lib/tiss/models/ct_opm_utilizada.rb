@@ -3,11 +3,9 @@
 module Tiss::Model
   class CtOpmUtilizada < Base
     # @type: Opm
-
-    attribute :OPM
+    attr_accessor :OPM
 
     # @type: StDecimal82
-
-    attribute :valorTotalOPM
+    attr_accessor :valorTotalOPM
   end
 end

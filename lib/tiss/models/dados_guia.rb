@@ -3,15 +3,12 @@
 module Tiss::Model
   class DadosGuia < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
+    attr_accessor :numeroGuiaPrestador
 
     # @type: DmTipoGuia
-
-    attribute :tipoGuia
+    attr_accessor :tipoGuia
 
     # @type: DmStatusCancelamento
-
-    attribute :statusCancelamento
+    attr_accessor :statusCancelamento
   end
 end

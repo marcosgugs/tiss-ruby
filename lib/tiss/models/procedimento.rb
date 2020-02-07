@@ -3,15 +3,12 @@
 module Tiss::Model
   class Procedimento < Base
     # @type: DmTabela
-
-    attribute :codigoTabela
+    attr_accessor :codigoTabela
 
     # @type: StTexto10
-
-    attribute :codigoProcedimento
+    attr_accessor :codigoProcedimento
 
     # @type: StDecimal82
-
-    attribute :valorProcedimento
+    attr_accessor :valorProcedimento
   end
 end

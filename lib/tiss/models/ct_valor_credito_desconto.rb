@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtValorCreditoDesconto < Base
     # @type: DmTipoLancamento
-
-    attribute :tipoLancamento
+    attr_accessor :tipoLancamento
 
     # @type: StTexto100
-
-    attribute :descricao
+    attr_accessor :descricao
 
     # @type: StDecimal102
-
-    attribute :valor
+    attr_accessor :valor
   end
 end

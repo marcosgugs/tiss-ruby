@@ -3,19 +3,15 @@
 module Tiss::Model
   class IdentificacaoTransacao < Base
     # @type: DmTipoTransacao
-
-    attribute :tipoTransacao
+    attr_accessor :tipoTransacao
 
     # @type: StTexto12
-
-    attribute :sequencialTransacao
+    attr_accessor :sequencialTransacao
 
     # @type: StData
-
-    attribute :dataRegistroTransacao
+    attr_accessor :dataRegistroTransacao
 
     # @type: StHora
-
-    attribute :horaRegistroTransacao
+    attr_accessor :horaRegistroTransacao
   end
 end

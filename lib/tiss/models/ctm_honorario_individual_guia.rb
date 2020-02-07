@@ -3,55 +3,42 @@
 module Tiss::Model
   class CtmHonorarioIndividualGuia < Base
     # @type: CtGuiaCabecalho
-
-    attribute :cabecalhoGuia
-
-    # @type: StTexto20
-
-    attribute :guiaSolicInternacao
+    attr_accessor :cabecalhoGuia
 
     # @type: StTexto20
-
-    attribute :senha
+    attr_accessor :guiaSolicInternacao
 
     # @type: StTexto20
+    attr_accessor :senha
 
-    attribute :numeroGuiaOperadora
+    # @type: StTexto20
+    attr_accessor :numeroGuiaOperadora
 
     # @type: Beneficiario
-
-    attribute :beneficiario
+    attr_accessor :beneficiario
 
     # @type: LocalContratado
-
-    attribute :localContratado
+    attr_accessor :localContratado
 
     # @type: DadosContratadoExecutante
-
-    attribute :dadosContratadoExecutante
+    attr_accessor :dadosContratadoExecutante
 
     # @type: DadosInternacao
-
-    attribute :dadosInternacao
+    attr_accessor :dadosInternacao
 
     # @type: ProcedimentosRealizados
-
-    attribute :procedimentosRealizados
+    attr_accessor :procedimentosRealizados
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: StDecimal102
-
-    attribute :valorTotalHonorarios
+    attr_accessor :valorTotalHonorarios
 
     # @type: StData
-
-    attribute :dataEmissaoGuia
+    attr_accessor :dataEmissaoGuia
 
     # @type: AssinaturaDigital
-
-    attribute :assinaturaDigitalGuia
+    attr_accessor :assinaturaDigitalGuia
   end
 end

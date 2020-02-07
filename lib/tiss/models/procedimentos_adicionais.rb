@@ -3,11 +3,9 @@
 module Tiss::Model
   class ProcedimentosAdicionais < Base
     # @type: CtProcedimentoDados
-
-    attribute :procedimento
+    attr_accessor :procedimento
 
     # @type: StNumerico3
-
-    attribute :quantidadeSolicitada
+    attr_accessor :quantidadeSolicitada
   end
 end

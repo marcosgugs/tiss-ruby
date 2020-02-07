@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtDiagnostico < Base
     # @type: DmTabelasDiagnostico
-
-    attribute :tabelaDiagnostico
+    attr_accessor :tabelaDiagnostico
 
     # @type: StTexto4
-
-    attribute :codigoDiagnostico
+    attr_accessor :codigoDiagnostico
 
     # @type: StTexto150
-
-    attribute :descricaoDiagnostico
+    attr_accessor :descricaoDiagnostico
   end
 end

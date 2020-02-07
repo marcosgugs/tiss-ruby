@@ -3,43 +3,35 @@
 module Tiss::Model
   class CtmAutorizacaoServico < Base
     # @type: CtAutorizacaoDados
-
-    attribute :dadosAutorizacao
+    attr_accessor :dadosAutorizacao
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: PrestadorAutorizado
-
-    attribute :prestadorAutorizado
+    attr_accessor :prestadorAutorizado
 
     # @type: DmStatusSolicitacao
-
-    attribute :statusSolicitacao
+    attr_accessor :statusSolicitacao
 
     # @type: MotivosNegativa
-
-    attribute :motivosNegativa
+    attr_accessor :motivosNegativa
 
     # @type: ServicosAutorizados
-
-    attribute :servicosAutorizados
+    attr_accessor :servicosAutorizados
 
     # @type: StTexto1000
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: CtmAutorizacaoQuimio
-
-    attribute :autorizacaoQuimio
+    attr_accessor :autorizacaoQuimio
 
     # @type: CtmAutorizacaoRadio
-
-    attribute :autorizacaoRadio
+    attr_accessor :autorizacaoRadio
 
     # @type: DmEtapasAutorizacao
+    attr_accessor :tipoEtapaAutorizacao
 
-    attribute :tipoEtapaAutorizacao, only: %w[V3_04_00]
+    attribute_config :tipoEtapaAutorizacao, only: %w[V3_04_00]
   end
 end

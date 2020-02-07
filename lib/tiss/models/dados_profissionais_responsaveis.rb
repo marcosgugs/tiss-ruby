@@ -3,55 +3,42 @@
 module Tiss::Model
   class DadosProfissionaisResponsaveis < Base
     # @type: StTexto70
-
-    attribute :nomeProfSolic
+    attr_accessor :nomeProfSolic
 
     # @type: StTexto15
-
-    attribute :croSolic
+    attr_accessor :croSolic
 
     # @type: DmUf
-
-    attribute :ufSolic
+    attr_accessor :ufSolic
 
     # @type: DmCbos
-
-    attribute :cbosSolic
+    attr_accessor :cbosSolic
 
     # @type: StTexto14
-
-    attribute :codigoProfExec
+    attr_accessor :codigoProfExec
 
     # @type: StTexto70
-
-    attribute :nomeProfExec
+    attr_accessor :nomeProfExec
 
     # @type: StTexto15
-
-    attribute :croExec
+    attr_accessor :croExec
 
     # @type: DmUf
-
-    attribute :ufExec
+    attr_accessor :ufExec
 
     # @type: StTexto7
-
-    attribute :cnesExec
+    attr_accessor :cnesExec
 
     # @type: StTexto70
-
-    attribute :nomeProfExec2
+    attr_accessor :nomeProfExec2
 
     # @type: StTexto15
-
-    attribute :croExec2
+    attr_accessor :croExec2
 
     # @type: DmUf
-
-    attribute :ufExec2
+    attr_accessor :ufExec2
 
     # @type: DmCbos
-
-    attribute :cbosExec2
+    attr_accessor :cbosExec2
   end
 end

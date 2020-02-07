@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtLoteAnexoStatus < Base
     # @type: DmStatusProtocolo
-
-    attribute :statusProtocolo
-
-    # @type: StTexto12
-
-    attribute :numeroProtocolo
+    attr_accessor :statusProtocolo
 
     # @type: StTexto12
+    attr_accessor :numeroProtocolo
 
-    attribute :numeroLote
+    # @type: StTexto12
+    attr_accessor :numeroLote
 
     # @type: StData
-
-    attribute :dataEnvioLote
+    attr_accessor :dataEnvioLote
 
     # @type:
-
-    attribute :anexosClinicos
+    attr_accessor :anexosClinicos
   end
 end

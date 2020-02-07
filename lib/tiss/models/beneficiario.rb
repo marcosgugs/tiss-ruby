@@ -3,15 +3,12 @@
 module Tiss::Model
   class Beneficiario < Base
     # @type: StTexto20
-
-    attribute :numeroCarteira
+    attr_accessor :numeroCarteira
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: DmSimNao
-
-    attribute :atendimentoRN
+    attr_accessor :atendimentoRN
   end
 end

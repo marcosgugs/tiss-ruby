@@ -3,7 +3,6 @@
 module Tiss::Model
   class Opm < Base
     # @type: IdentificacaoOpm
-
-    attribute :identificacaoOPM
+    attr_accessor :identificacaoOPM
   end
 end

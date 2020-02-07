@@ -3,51 +3,39 @@
 module Tiss::Model
   class CtGlosaReciboOdonto < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: StTexto20
-
-    attribute :numeroGuiaRecGlosaPrestador
+    attr_accessor :numeroGuiaRecGlosaPrestador
 
     # @type: StTexto70
-
-    attribute :nomeOperadora
+    attr_accessor :nomeOperadora
 
     # @type: StTexto20
-
-    attribute :numeroGuiaRecGlosaOperadora
+    attr_accessor :numeroGuiaRecGlosaOperadora
 
     # @type: DmObjetoRecurso
-
-    attribute :objetoRecurso
+    attr_accessor :objetoRecurso
 
     # @type: DadosContratado
-
-    attribute :dadosContratado
-
-    # @type: StNumerico12
-
-    attribute :numeroLote
+    attr_accessor :dadosContratado
 
     # @type: StNumerico12
+    attr_accessor :numeroLote
 
-    attribute :numeroProtocolo
+    # @type: StNumerico12
+    attr_accessor :numeroProtocolo
 
     # @type:
-
-    attribute :opcaoRecurso
+    attr_accessor :opcaoRecurso
 
     # @type: StData
-
-    attribute :dataRecurso
-
-    # @type: StDecimal102
-
-    attribute :valorTotalRecursado
+    attr_accessor :dataRecurso
 
     # @type: StDecimal102
+    attr_accessor :valorTotalRecursado
 
-    attribute :valorTotalAcatado
+    # @type: StDecimal102
+    attr_accessor :valorTotalAcatado
   end
 end

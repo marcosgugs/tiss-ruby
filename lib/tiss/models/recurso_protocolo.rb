@@ -3,11 +3,9 @@
 module Tiss::Model
   class RecursoProtocolo < Base
     # @type: DmTipoGlosa
-
-    attribute :codigoGlosaProtocolo
+    attr_accessor :codigoGlosaProtocolo
 
     # @type: StTexto150
-
-    attribute :justificativaProtocolo
+    attr_accessor :justificativaProtocolo
   end
 end

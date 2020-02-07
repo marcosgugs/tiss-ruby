@@ -3,39 +3,30 @@
 module Tiss::Model
   class CtoDemonstrativoOdontologia < Base
     # @type: CabecalhoDemonstrativoOdonto
-
-    attribute :cabecalhoDemonstrativoOdonto
+    attr_accessor :cabecalhoDemonstrativoOdonto
 
     # @type: DadosPrestador
-
-    attribute :dadosPrestador
+    attr_accessor :dadosPrestador
 
     # @type: DadosPagamentoPorData
-
-    attribute :dadosPagamentoPorData
+    attr_accessor :dadosPagamentoPorData
 
     # @type: TotaisBrutoDemonstrativo
-
-    attribute :totaisBrutoDemonstrativo
+    attr_accessor :totaisBrutoDemonstrativo
 
     # @type: DebCredDemonstrativo
-
-    attribute :debCredDemonstrativo
-
-    # @type: StDecimal102
-
-    attribute :totalDebitosDemonstativo
+    attr_accessor :debCredDemonstrativo
 
     # @type: StDecimal102
-
-    attribute :totalCreditosDemonstrativo
+    attr_accessor :totalDebitosDemonstativo
 
     # @type: StDecimal102
+    attr_accessor :totalCreditosDemonstrativo
 
-    attribute :valorRecebidoDemonstrativo
+    # @type: StDecimal102
+    attr_accessor :valorRecebidoDemonstrativo
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
   end
 end

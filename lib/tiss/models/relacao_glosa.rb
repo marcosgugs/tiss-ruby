@@ -3,11 +3,9 @@
 module Tiss::Model
   class RelacaoGlosa < Base
     # @type: StDecimal82
-
-    attribute :valorGlosa
+    attr_accessor :valorGlosa
 
     # @type: DmTipoGlosa
-
-    attribute :tipoGlosa
+    attr_accessor :tipoGlosa
   end
 end

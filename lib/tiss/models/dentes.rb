@@ -3,11 +3,9 @@
 module Tiss::Model
   class Dentes < Base
     # @type: DmDente
-
-    attribute :elementoDentario
+    attr_accessor :elementoDentario
 
     # @type: DmCondicaoClinica
-
-    attribute :condicaoClinica
+    attr_accessor :condicaoClinica
   end
 end

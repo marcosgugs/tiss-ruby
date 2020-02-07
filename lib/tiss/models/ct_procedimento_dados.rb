@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtProcedimentoDados < Base
     # @type: DmTabela
-
-    attribute :codigoTabela
+    attr_accessor :codigoTabela
 
     # @type: StTexto10
-
-    attribute :codigoProcedimento
+    attr_accessor :codigoProcedimento
 
     # @type: StTexto150
-
-    attribute :descricaoProcedimento
+    attr_accessor :descricaoProcedimento
   end
 end

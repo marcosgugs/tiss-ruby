@@ -3,15 +3,12 @@
 module Tiss::Model
   class DadosHospitalSolicitado < Base
     # @type: StTexto14
-
-    attribute :codigoIndicadonaOperadora
+    attr_accessor :codigoIndicadonaOperadora
 
     # @type: StTexto70
-
-    attribute :nomeContratadoIndicado
+    attr_accessor :nomeContratadoIndicado
 
     # @type: StData
-
-    attribute :dataSugeridaInternacao
+    attr_accessor :dataSugeridaInternacao
   end
 end

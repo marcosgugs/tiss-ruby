@@ -3,31 +3,28 @@
 module Tiss::Model
   class CabecalhoTransacao < Base
     # @type: IdentificacaoTransacao
-
-    attribute :identificacaoTransacao
+    attr_accessor :identificacaoTransacao
 
     # @type: DmTipoGlosa
-
-    attribute :falhaNegocio
-
-    # @type:
-
-    attribute :origem
+    attr_accessor :falhaNegocio
 
     # @type:
+    attr_accessor :origem
 
-    attribute :destino
+    # @type:
+    attr_accessor :destino
 
     # @type: DmVersao
-
-    attribute :versaoPadrao, only: %w[V3_02_00 V3_02_01]
+    attr_accessor :versaoPadrao
 
     # @type: CtLoginSenha
-
-    attribute :loginSenhaPrestador
+    attr_accessor :loginSenhaPrestador
 
     # @type: DmVersao
+    attr_accessor :Padrao
 
-    attribute :Padrao, unless: %w[V3_02_00 V3_02_01]
+    attribute_config :versaoPadrao, only: %w[V3_02_00 V3_02_01]
+
+    attribute_config :Padrao, unless: %w[V3_02_00 V3_02_01]
   end
 end

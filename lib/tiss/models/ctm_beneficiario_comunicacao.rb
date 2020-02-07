@@ -3,19 +3,15 @@
 module Tiss::Model
   class CtmBeneficiarioComunicacao < Base
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: StData
-
-    attribute :dataEvento
+    attr_accessor :dataEvento
 
     # @type: DmTipoEvento
-
-    attribute :tipoEvento
+    attr_accessor :tipoEvento
 
     # @type:
-
-    attribute :dadosInternacao
+    attr_accessor :dadosInternacao
   end
 end

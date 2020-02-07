@@ -3,103 +3,86 @@
 module Tiss::Model
   class CtoOdontoSolicitacaoGuia < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
+    attr_accessor :registroANS
 
     # @type: StTexto20
-
-    attribute :numeroGuiaPrincipal
+    attr_accessor :numeroGuiaPrestador
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaPrincipal
 
-    attribute :numeroCarteira
+    # @type: StTexto20
+    attr_accessor :numeroCarteira
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: DmSimNao
-
-    attribute :atendimentoRN
+    attr_accessor :atendimentoRN
 
     # @type: StTexto15
-
-    attribute :numeroCNS
+    attr_accessor :numeroCNS
 
     # @type: Base64Binary
-
-    attribute :identificadorBeneficiario
-
-    # @type: StTexto40
-
-    attribute :planoBeneficiario
+    attr_accessor :identificadorBeneficiario
 
     # @type: StTexto40
+    attr_accessor :planoBeneficiario
 
-    attribute :nomeEmpresa
+    # @type: StTexto40
+    attr_accessor :nomeEmpresa
 
     # @type: StTexto20
-
-    attribute :numeroTelefone
+    attr_accessor :numeroTelefone
 
     # @type: StTexto70
-
-    attribute :nomeTitular
+    attr_accessor :nomeTitular
 
     # @type: DadosProfissionaisResponsaveis
-
-    attribute :dadosProfissionaisResponsaveis
+    attr_accessor :dadosProfissionaisResponsaveis
 
     # @type: ProcedimentosSolicitados
-
-    attribute :procedimentosSolicitados
+    attr_accessor :procedimentosSolicitados
 
     # @type: StData
-
-    attribute :dataTerminoTrat
+    attr_accessor :dataTerminoTrat
 
     # @type: DmTipoAtendimentoOdonto
-
-    attribute :tipoAtendimento
-
-    # @type: StDecimal82
-
-    attribute :qtdTotalUS
+    attr_accessor :tipoAtendimento
 
     # @type: StDecimal82
-
-    attribute :valorTotalProc
+    attr_accessor :qtdTotalUS
 
     # @type: StDecimal82
+    attr_accessor :valorTotalProc
 
-    attribute :valorTotalFranquia
+    # @type: StDecimal82
+    attr_accessor :valorTotalFranquia
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: CtoAnexoSituacaoInicial
-
-    attribute :odontoInicial
+    attr_accessor :odontoInicial
 
     # @type: DmAusenciaCodValidacao
-
-    attribute :ausenciaCodValidacao, only: %w[V3_04_00]
+    attr_accessor :ausenciaCodValidacao
 
     # @type: StTexto10
-
-    attribute :codValidacao, only: %w[V3_04_00]
+    attr_accessor :codValidacao
 
     # @type: DmTipoIdent
-
-    attribute :tipoIdent, only: %w[V3_04_00]
+    attr_accessor :tipoIdent
 
     # @type: Base64Binary
+    attr_accessor :templateBiometrico
 
-    attribute :templateBiometrico, only: %w[V3_04_00]
+    attribute_config :ausenciaCodValidacao, only: %w[V3_04_00]
+
+    attribute_config :codValidacao, only: %w[V3_04_00]
+
+    attribute_config :tipoIdent, only: %w[V3_04_00]
+
+    attribute_config :templateBiometrico, only: %w[V3_04_00]
   end
 end

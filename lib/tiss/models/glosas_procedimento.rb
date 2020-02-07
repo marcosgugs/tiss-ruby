@@ -3,11 +3,9 @@
 module Tiss::Model
   class GlosasProcedimento < Base
     # @type: CtMotivoGlosa
-
-    attribute :motivoGlosa
+    attr_accessor :motivoGlosa
 
     # @type: StDecimal102
-
-    attribute :valorGlosaProcedimento
+    attr_accessor :valorGlosaProcedimento
   end
 end

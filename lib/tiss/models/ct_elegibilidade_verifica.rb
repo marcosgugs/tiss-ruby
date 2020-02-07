@@ -3,43 +3,41 @@
 module Tiss::Model
   class CtElegibilidadeVerifica < Base
     # @type: CtContratadoDados
-
-    attribute :dadosPrestador
+    attr_accessor :dadosPrestador
 
     # @type: StTexto20
-
-    attribute :numeroCarteira
+    attr_accessor :numeroCarteira
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: StTexto15
-
-    attribute :numeroCNS
+    attr_accessor :numeroCNS
 
     # @type: Base64Binary
-
-    attribute :identificadorBeneficiario
+    attr_accessor :identificadorBeneficiario
 
     # @type: StData
-
-    attribute :validadeCarteira
+    attr_accessor :validadeCarteira
 
     # @type: DmTipoIdent
-
-    attribute :tipoIdent, only: %w[V3_04_00]
+    attr_accessor :tipoIdent
 
     # @type: Base64Binary
-
-    attribute :templateBiometrico, only: %w[V3_04_00]
+    attr_accessor :templateBiometrico
 
     # @type: DmAusenciaCodValidacao
-
-    attribute :ausenciaCodValidacao, only: %w[V3_04_00]
+    attr_accessor :ausenciaCodValidacao
 
     # @type: StTexto10
+    attr_accessor :codValidacao
 
-    attribute :codValidacao, only: %w[V3_04_00]
+    attribute_config :tipoIdent, only: %w[V3_04_00]
+
+    attribute_config :templateBiometrico, only: %w[V3_04_00]
+
+    attribute_config :ausenciaCodValidacao, only: %w[V3_04_00]
+
+    attribute_config :codValidacao, only: %w[V3_04_00]
   end
 end

@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtDemonstrativoCabecalho < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: StTexto20
-
-    attribute :numeroDemonstrativo
+    attr_accessor :numeroDemonstrativo
 
     # @type: StTexto70
-
-    attribute :nomeOperadora
+    attr_accessor :nomeOperadora
 
     # @type: StCnpj
-
-    attribute :numeroCNPJ
+    attr_accessor :numeroCNPJ
 
     # @type: StData
-
-    attribute :dataEmissao
+    attr_accessor :dataEmissao
   end
 end

@@ -3,19 +3,15 @@
 module Tiss::Model
   class Protocolos < Base
     # @type: StTexto12
-
-    attribute :numeroLote
+    attr_accessor :numeroLote
 
     # @type: StTexto12
-
-    attribute :numeroProtocolo
+    attr_accessor :numeroProtocolo
 
     # @type: DadosPagamentoGuia
-
-    attribute :dadosPagamentoGuia
+    attr_accessor :dadosPagamentoGuia
 
     # @type: TotaisPorProtocolo
-
-    attribute :totaisPorProtocolo
+    attr_accessor :totaisPorProtocolo
   end
 end

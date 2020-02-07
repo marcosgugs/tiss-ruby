@@ -3,67 +3,53 @@
 module Tiss::Model
   class CtmAutorizacaoRadio < Base
     # @type: CtAutorizacaoDados
-
-    attribute :dadosAutorizacao
+    attr_accessor :dadosAutorizacao
 
     # @type: StTexto20
-
-    attribute :numeroCarteira
+    attr_accessor :numeroCarteira
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: StTexto15
-
-    attribute :numeroCNS
+    attr_accessor :numeroCNS
 
     # @type: DmStatusSolicitacao
-
-    attribute :statusSolicitacao
+    attr_accessor :statusSolicitacao
 
     # @type: CtDadosComplementaresBeneficiarioRadio
-
-    attribute :dadosComplementaresBeneficiario
+    attr_accessor :dadosComplementaresBeneficiario
 
     # @type: CtmAnexoSolicitante
-
-    attribute :medicoSolicitante
+    attr_accessor :medicoSolicitante
 
     # @type: DiagnosticoOncologicoRadio
-
-    attribute :diagnosticoOncologicoRadio
+    attr_accessor :diagnosticoOncologicoRadio
 
     # @type: TratamentosAnteriores
-
-    attribute :tratamentosAnteriores
+    attr_accessor :tratamentosAnteriores
 
     # @type: ProcedimentosComplementares
-
-    attribute :procedimentosComplementares, unless: %w[V3_03_01 V3_03_02 V3_03_03 V3_04_00]
-
-    # @type: StNumerico3
-
-    attribute :numeroCampos
-
-    # @type: StNumerico4
-
-    attribute :doseCampo
-
-    # @type: StNumerico4
-
-    attribute :doseTotal
+    attr_accessor :procedimentosComplementares
 
     # @type: StNumerico3
+    attr_accessor :numeroCampos
 
-    attribute :nrDias
+    # @type: StNumerico4
+    attr_accessor :doseCampo
+
+    # @type: StNumerico4
+    attr_accessor :doseTotal
+
+    # @type: StNumerico3
+    attr_accessor :nrDias
 
     # @type: StData
-
-    attribute :dtPrevistaInicio
+    attr_accessor :dtPrevistaInicio
 
     # @type: MotivosNegativa
+    attr_accessor :motivosNegativa
 
-    attribute :motivosNegativa
+    attribute_config :procedimentosComplementares, unless: %w[V3_03_01 V3_03_02 V3_03_03 V3_04_00]
   end
 end

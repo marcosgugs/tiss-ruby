@@ -3,23 +3,18 @@
 module Tiss::Model
   class PagamentosPorData < Base
     # @type: CtPagamentoDados
-
-    attribute :dadosPagamento
+    attr_accessor :dadosPagamento
 
     # @type: DadosResumo
-
-    attribute :dadosResumo
+    attr_accessor :dadosResumo
 
     # @type: TotaisBrutosPorData
-
-    attribute :totaisBrutosPorData
+    attr_accessor :totaisBrutosPorData
 
     # @type: DebitosCreditosPorData
-
-    attribute :debitosCreditosPorData
+    attr_accessor :debitosCreditosPorData
 
     # @type: TotaisLiquidosPorData
-
-    attribute :totaisLiquidosPorData
+    attr_accessor :totaisLiquidosPorData
   end
 end

@@ -19,7 +19,6 @@ module Tiss
   setting :default_version, 'V3_02_00'
   setting :available_versions, %w[V3_02_00 V3_02_01 V3_02_02 V3_03_01 V3_03_02 V3_03_03 V3_04_00]
 
-
   # TODO: Refactor this
   class ConvertFromXsd
     def initialize
@@ -34,7 +33,7 @@ module Tiss
 end
 
 def require_all(_dir)
-  Dir[File.expand_path(File.join(File.dirname(File.absolute_path(__FILE__)), _dir)) + "/**/*.rb"].each do |file|
+  Dir[File.expand_path(File.join(File.dirname(File.absolute_path(__FILE__)), _dir)) + '/**/*.rb'].sort.each do |file|
     require file
   end
 end

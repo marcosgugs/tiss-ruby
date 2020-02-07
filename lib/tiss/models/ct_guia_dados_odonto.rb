@@ -3,59 +3,53 @@
 module Tiss::Model
   class CtGuiaDadosOdonto < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
+    attr_accessor :numeroGuiaPrestador
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaOperadora
 
-    attribute :numeroCarteira
+    # @type: StTexto20
+    attr_accessor :numeroCarteira
 
     # @type: DmSimNao
-
-    attribute :atendimentoRN
+    attr_accessor :atendimentoRN
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: StTexto15
-
-    attribute :numeroCNS
+    attr_accessor :numeroCNS
 
     # @type: Base64Binary
-
-    attribute :identificadorBeneficiario
+    attr_accessor :identificadorBeneficiario
 
     # @type: CtValorTotal
-
-    attribute :vlInformadoGuia
+    attr_accessor :vlInformadoGuia
 
     # @type: GlosaGuia
-
-    attribute :glosaGuia
+    attr_accessor :glosaGuia
 
     # @type: ProcedimentosRealizados
-
-    attribute :procedimentosRealizados
+    attr_accessor :procedimentosRealizados
 
     # @type: DmAusenciaCodValidacao
-
-    attribute :ausenciaCodValidacao, only: %w[V3_04_00]
+    attr_accessor :ausenciaCodValidacao
 
     # @type: StTexto10
-
-    attribute :codValidacao, only: %w[V3_04_00]
+    attr_accessor :codValidacao
 
     # @type: DmTipoIdent
-
-    attribute :tipoIdent, only: %w[V3_04_00]
+    attr_accessor :tipoIdent
 
     # @type: Base64Binary
+    attr_accessor :templateBiometrico
 
-    attribute :templateBiometrico, only: %w[V3_04_00]
+    attribute_config :ausenciaCodValidacao, only: %w[V3_04_00]
+
+    attribute_config :codValidacao, only: %w[V3_04_00]
+
+    attribute_config :tipoIdent, only: %w[V3_04_00]
+
+    attribute_config :templateBiometrico, only: %w[V3_04_00]
   end
 end

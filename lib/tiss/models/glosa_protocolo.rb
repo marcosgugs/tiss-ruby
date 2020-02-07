@@ -3,11 +3,9 @@
 module Tiss::Model
   class GlosaProtocolo < Base
     # @type: MotivosGlosa
-
-    attribute :motivosGlosa
+    attr_accessor :motivosGlosa
 
     # @type: StDecimal102
-
-    attribute :vlGlosaProtocolo
+    attr_accessor :vlGlosaProtocolo
   end
 end

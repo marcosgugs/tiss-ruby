@@ -3,19 +3,15 @@
 module Tiss::Model
   class Declaracoes < Base
     # @type: StTexto11
-
-    attribute :declaracaoNascido
+    attr_accessor :declaracaoNascido
 
     # @type: StTexto4
-
-    attribute :diagnosticoObito
+    attr_accessor :diagnosticoObito
 
     # @type: StTexto11
-
-    attribute :declaracaoObito
+    attr_accessor :declaracaoObito
 
     # @type: DmSimNao
-
-    attribute :indicadorDORN
+    attr_accessor :indicadorDORN
   end
 end

@@ -3,19 +3,15 @@
 module Tiss::Model
   class CtoAnexoSituacaoInicialnaGto < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaAnexo
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaReferenciada
+    attr_accessor :numeroGuiaAnexo
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaReferenciada
 
-    attribute :numeroGuiaOperadora
+    # @type: StTexto20
+    attr_accessor :numeroGuiaOperadora
 
     # @type: CtSituacaoInicial
-
-    attribute :ct_situacaoInicial
+    attr_accessor :ct_situacaoInicial
   end
 end

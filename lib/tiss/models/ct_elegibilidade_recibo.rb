@@ -3,51 +3,47 @@
 module Tiss::Model
   class CtElegibilidadeRecibo < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: StTexto20
-
-    attribute :numeroCarteira
+    attr_accessor :numeroCarteira
 
     # @type: StData
-
-    attribute :validadeCarteira
+    attr_accessor :validadeCarteira
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: StTexto15
-
-    attribute :numeroCNS
+    attr_accessor :numeroCNS
 
     # @type: Base64Binary
-
-    attribute :identificadorBeneficiario
+    attr_accessor :identificadorBeneficiario
 
     # @type: DmSimNao
-
-    attribute :respostaSolicitacao
+    attr_accessor :respostaSolicitacao
 
     # @type: MotivosNegativa
-
-    attribute :motivosNegativa
+    attr_accessor :motivosNegativa
 
     # @type: DmAusenciaCodValidacao
-
-    attribute :ausenciaCodValidacao, only: %w[V3_04_00]
+    attr_accessor :ausenciaCodValidacao
 
     # @type: StTexto10
-
-    attribute :codValidacao, only: %w[V3_04_00]
+    attr_accessor :codValidacao
 
     # @type: DmTipoIdent
-
-    attribute :tipoIdent, only: %w[V3_04_00]
+    attr_accessor :tipoIdent
 
     # @type: Base64Binary
+    attr_accessor :templateBiometrico
 
-    attribute :templateBiometrico, only: %w[V3_04_00]
+    attribute_config :ausenciaCodValidacao, only: %w[V3_04_00]
+
+    attribute_config :codValidacao, only: %w[V3_04_00]
+
+    attribute_config :tipoIdent, only: %w[V3_04_00]
+
+    attribute_config :templateBiometrico, only: %w[V3_04_00]
   end
 end

@@ -3,19 +3,15 @@
 module Tiss::Model
   class CtmSpSadtAtendimento < Base
     # @type: DmTipoAtendimento
-
-    attribute :tipoAtendimento
+    attr_accessor :tipoAtendimento
 
     # @type: DmIndicadorAcidente
-
-    attribute :indicacaoAcidente
+    attr_accessor :indicacaoAcidente
 
     # @type: DmTipoConsulta
-
-    attribute :tipoConsulta
+    attr_accessor :tipoConsulta
 
     # @type: DmMotivoSaidaObito
-
-    attribute :motivoEncerramento
+    attr_accessor :motivoEncerramento
   end
 end

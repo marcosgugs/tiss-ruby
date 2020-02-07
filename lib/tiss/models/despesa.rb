@@ -3,19 +3,19 @@
 module Tiss::Model
   class Despesa < Base
     # @type: DmOutrasDespesas
-
-    attribute :codigoDespesa
+    attr_accessor :codigoDespesa
 
     # @type: CtProcedimentoExecutadoOutras
-
-    attribute :servicosExecutados
-
-    # @type: StNumerico4
-
-    attribute :sequencialItem, only: %w[V3_04_00]
+    attr_accessor :servicosExecutados
 
     # @type: StNumerico4
+    attr_accessor :sequencialItem
 
-    attribute :itemVinculado, only: %w[V3_04_00]
+    # @type: StNumerico4
+    attr_accessor :itemVinculado
+
+    attribute_config :sequencialItem, only: %w[V3_04_00]
+
+    attribute_config :itemVinculado, only: %w[V3_04_00]
   end
 end

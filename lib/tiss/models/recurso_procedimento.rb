@@ -3,47 +3,38 @@
 module Tiss::Model
   class RecursoProcedimento < Base
     # @type: StData
-
-    attribute :dataRealizacao
+    attr_accessor :dataRealizacao
 
     # @type:
-
-    attribute :denteRegiao
+    attr_accessor :denteRegiao
 
     # @type: DmFace
-
-    attribute :denteFace
+    attr_accessor :denteFace
 
     # @type: StNumerico2
-
-    attribute :quantidade
+    attr_accessor :quantidade
 
     # @type: CtProcedimentoDados
-
-    attribute :procRecurso
+    attr_accessor :procRecurso
 
     # @type: DmTipoGlosa
-
-    attribute :codGlosaProc
-
-    # @type: StDecimal82
-
-    attribute :valorRecursado
-
-    # @type: StTexto150
-
-    attribute :justificativaPrestador
+    attr_accessor :codGlosaProc
 
     # @type: StDecimal82
-
-    attribute :valorAcatado
+    attr_accessor :valorRecursado
 
     # @type: StTexto150
+    attr_accessor :justificativaPrestador
 
-    attribute :justificativaOperadora
+    # @type: StDecimal82
+    attr_accessor :valorAcatado
+
+    # @type: StTexto150
+    attr_accessor :justificativaOperadora
 
     # @type: StNumerico4
+    attr_accessor :sequencialItem
 
-    attribute :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[V3_04_00]
   end
 end

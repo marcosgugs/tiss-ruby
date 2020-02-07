@@ -3,39 +3,32 @@
 module Tiss::Model
   class DetalhesGuia < Base
     # @type: StData
-
-    attribute :dataRealizacao
+    attr_accessor :dataRealizacao
 
     # @type: CtProcedimentoDados
-
-    attribute :procedimento
+    attr_accessor :procedimento
 
     # @type: DmGrauPart
-
-    attribute :grauParticipacao
+    attr_accessor :grauParticipacao
 
     # @type: StDecimal82
-
-    attribute :valorInformado
+    attr_accessor :valorInformado
 
     # @type: StDecimal84
-
-    attribute :qtdExecutada
-
-    # @type: StDecimal82
-
-    attribute :valorProcessado
+    attr_accessor :qtdExecutada
 
     # @type: StDecimal82
+    attr_accessor :valorProcessado
 
-    attribute :valorLiberado
+    # @type: StDecimal82
+    attr_accessor :valorLiberado
 
     # @type: RelacaoGlosa
-
-    attribute :relacaoGlosa
+    attr_accessor :relacaoGlosa
 
     # @type: StNumerico4
+    attr_accessor :sequencialItem
 
-    attribute :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[V3_04_00]
   end
 end

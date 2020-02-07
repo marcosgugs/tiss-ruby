@@ -3,51 +3,41 @@
 module Tiss::Model
   class CtProcedimentoExecutadoInt < Base
     # @type: StData
-
-    attribute :dataExecucao
-
-    # @type: StHora
-
-    attribute :horaInicial
+    attr_accessor :dataExecucao
 
     # @type: StHora
+    attr_accessor :horaInicial
 
-    attribute :horaFinal
+    # @type: StHora
+    attr_accessor :horaFinal
 
     # @type: CtProcedimentoDados
-
-    attribute :procedimento
+    attr_accessor :procedimento
 
     # @type: StNumerico3
-
-    attribute :quantidadeExecutada
+    attr_accessor :quantidadeExecutada
 
     # @type: DmViaDeAcesso
-
-    attribute :viaAcesso
+    attr_accessor :viaAcesso
 
     # @type: DmTecnicaUtilizada
-
-    attribute :tecnicaUtilizada
+    attr_accessor :tecnicaUtilizada
 
     # @type: StDecimal32
-
-    attribute :reducaoAcrescimo
-
-    # @type: StDecimal82
-
-    attribute :valorUnitario
+    attr_accessor :reducaoAcrescimo
 
     # @type: StDecimal82
+    attr_accessor :valorUnitario
 
-    attribute :valorTotal
+    # @type: StDecimal82
+    attr_accessor :valorTotal
 
     # @type: IdentEquipe
-
-    attribute :identEquipe
+    attr_accessor :identEquipe
 
     # @type: StNumerico4
+    attr_accessor :sequencialItem
 
-    attribute :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[V3_04_00]
   end
 end

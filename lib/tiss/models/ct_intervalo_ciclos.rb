@@ -3,11 +3,9 @@
 module Tiss::Model
   class CtIntervaloCiclos < Base
     # @type: StNumerico2
-
-    attribute :tempo
+    attr_accessor :tempo
 
     # @type: DmUnidadeTempoCiclo
-
-    attribute :unidade
+    attr_accessor :unidade
   end
 end

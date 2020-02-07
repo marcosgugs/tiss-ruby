@@ -3,31 +3,26 @@
 module Tiss::Model
   class CtRespostaGlosaGuiaMedica < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
+    attr_accessor :numeroGuiaPrestador
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaOperadora
 
-    attribute :senha
+    # @type: StTexto20
+    attr_accessor :senha
 
     # @type: DmTipoGlosa
-
-    attribute :codGlosa
+    attr_accessor :codGlosa
 
     # @type: StTexto150
-
-    attribute :justificativaPrestador
+    attr_accessor :justificativaPrestador
 
     # @type: DmSimNao
-
-    attribute :recursoGuiaAcatado
+    attr_accessor :recursoGuiaAcatado
 
     # @type: StTexto150
+    attr_accessor :justificativaOPSnaoAcatadoGuia
 
-    attribute :justificativaOPSnaoAcatadoGuia, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attribute_config :justificativaOPSnaoAcatadoGuia, unless: %w[V3_02_00 V3_02_01 V3_02_02]
   end
 end

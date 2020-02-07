@@ -3,31 +3,24 @@
 module Tiss::Model
   class CtDadosResumoDemonstrativo < Base
     # @type: StData
-
-    attribute :dataProtocolo
-
-    # @type: StTexto12
-
-    attribute :numeroProtocolo
+    attr_accessor :dataProtocolo
 
     # @type: StTexto12
+    attr_accessor :numeroProtocolo
 
-    attribute :numeroLote
-
-    # @type: StDecimal102
-
-    attribute :valorInformado
+    # @type: StTexto12
+    attr_accessor :numeroLote
 
     # @type: StDecimal102
-
-    attribute :valorProcessado
-
-    # @type: StDecimal102
-
-    attribute :valorLiberado
+    attr_accessor :valorInformado
 
     # @type: StDecimal102
+    attr_accessor :valorProcessado
 
-    attribute :valorGlosa
+    # @type: StDecimal102
+    attr_accessor :valorLiberado
+
+    # @type: StDecimal102
+    attr_accessor :valorGlosa
   end
 end

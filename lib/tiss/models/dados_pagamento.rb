@@ -3,67 +3,53 @@
 module Tiss::Model
   class DadosPagamento < Base
     # @type: StData
-
-    attribute :dataPagamento
+    attr_accessor :dataPagamento
 
     # @type: StTexto4
-
-    attribute :banco
+    attr_accessor :banco
 
     # @type: StTexto7
-
-    attribute :agencia
+    attr_accessor :agencia
 
     # @type: StTexto20
-
-    attribute :conta
+    attr_accessor :conta
 
     # @type: CtProcedimentoDados
-
-    attribute :procedimento
+    attr_accessor :procedimento
 
     # @type:
-
-    attribute :denteRegiao
+    attr_accessor :denteRegiao
 
     # @type: StTexto5
-
-    attribute :denteFace
+    attr_accessor :denteFace
 
     # @type: StData
-
-    attribute :dataRealizacao
+    attr_accessor :dataRealizacao
 
     # @type: StNumerico2
-
-    attribute :qtdProc
-
-    # @type: StDecimal72
-
-    attribute :valorInformado
+    attr_accessor :qtdProc
 
     # @type: StDecimal72
-
-    attribute :valorProcessado
-
-    # @type: StDecimal72
-
-    attribute :valorGlosaEstorno
+    attr_accessor :valorInformado
 
     # @type: StDecimal72
-
-    attribute :valorFranquia
+    attr_accessor :valorProcessado
 
     # @type: StDecimal72
+    attr_accessor :valorGlosaEstorno
 
-    attribute :valorLiberado
+    # @type: StDecimal72
+    attr_accessor :valorFranquia
+
+    # @type: StDecimal72
+    attr_accessor :valorLiberado
 
     # @type: DmTipoGlosa
-
-    attribute :codigosGlosa
+    attr_accessor :codigosGlosa
 
     # @type: StNumerico4
+    attr_accessor :sequencialItem
 
-    attribute :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[V3_04_00]
   end
 end

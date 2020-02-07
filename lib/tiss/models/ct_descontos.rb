@@ -3,19 +3,15 @@
 module Tiss::Model
   class CtDescontos < Base
     # @type: DmDebitoCreditoIndicador
-
-    attribute :indicador
+    attr_accessor :indicador
 
     # @type: DmDebitoCreditoTipo
-
-    attribute :tipoDebitoCredito
+    attr_accessor :tipoDebitoCredito
 
     # @type: StTexto40
-
-    attribute :descricaoDbCr
+    attr_accessor :descricaoDbCr
 
     # @type: StDecimal82
-
-    attribute :valorDbCr
+    attr_accessor :valorDbCr
   end
 end

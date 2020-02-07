@@ -3,11 +3,9 @@
 module Tiss::Model
   class GlosaAnexo < Base
     # @type: CtMotivoGlosa
-
-    attribute :motivoGlosa
+    attr_accessor :motivoGlosa
 
     # @type: StDecimal102
-
-    attribute :vlGlosaAnexo
+    attr_accessor :vlGlosaAnexo
   end
 end

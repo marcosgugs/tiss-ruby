@@ -3,7 +3,6 @@
 module Tiss::Model
   class CtOutrasDespesas < Base
     # @type: Despesa
-
-    attribute :despesa
+    attr_accessor :despesa
   end
 end

@@ -3,51 +3,39 @@
 module Tiss::Model
   class CtGlosaRecibo < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaRecGlosaPrestador
+    attr_accessor :registroANS
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaRecGlosaPrestador
 
-    attribute :numeroGuiaRecGlosaOperadora
+    # @type: StTexto20
+    attr_accessor :numeroGuiaRecGlosaOperadora
 
     # @type: StTexto70
-
-    attribute :nomeOperadora
+    attr_accessor :nomeOperadora
 
     # @type: DmObjetoRecurso
-
-    attribute :objetoRecurso
+    attr_accessor :objetoRecurso
 
     # @type: DadosContratado
-
-    attribute :dadosContratado
-
-    # @type: StNumerico12
-
-    attribute :numeroLote
+    attr_accessor :dadosContratado
 
     # @type: StNumerico12
+    attr_accessor :numeroLote
 
-    attribute :numeroProtocolo
+    # @type: StNumerico12
+    attr_accessor :numeroProtocolo
 
     # @type:
-
-    attribute :opcaoRecurso
+    attr_accessor :opcaoRecurso
 
     # @type: StData
-
-    attribute :dataRecurso
-
-    # @type: StDecimal102
-
-    attribute :valorTotalRecursado
+    attr_accessor :dataRecurso
 
     # @type: StDecimal102
+    attr_accessor :valorTotalRecursado
 
-    attribute :valorTotalAcatado
+    # @type: StDecimal102
+    attr_accessor :valorTotalAcatado
   end
 end

@@ -3,27 +3,21 @@
 module Tiss::Model
   class TratamentosAnteriores < Base
     # @type: StTexto40
-
-    attribute :cirurgia
+    attr_accessor :cirurgia
 
     # @type: StData
-
-    attribute :datacirurgia
+    attr_accessor :datacirurgia
 
     # @type: StTexto40
-
-    attribute :areaIrradiada
+    attr_accessor :areaIrradiada
 
     # @type: StData
-
-    attribute :dataIrradiacao
+    attr_accessor :dataIrradiacao
 
     # @type: StTexto40
-
-    attribute :quimioterapia
+    attr_accessor :quimioterapia
 
     # @type: StData
-
-    attribute :dataQuimioterapia
+    attr_accessor :dataQuimioterapia
   end
 end

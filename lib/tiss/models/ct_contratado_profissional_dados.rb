@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtContratadoProfissionalDados < Base
     # @type: StTexto70
-
-    attribute :nomeProfissional
+    attr_accessor :nomeProfissional
 
     # @type: DmConselhoProfissional
-
-    attribute :conselhoProfissional
+    attr_accessor :conselhoProfissional
 
     # @type: StTexto15
-
-    attribute :numeroConselhoProfissional
+    attr_accessor :numeroConselhoProfissional
 
     # @type: DmUf
-
-    attribute :UF
+    attr_accessor :UF
 
     # @type: DmCbos
-
-    attribute :CBOS
+    attr_accessor :CBOS
   end
 end

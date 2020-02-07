@@ -3,51 +3,39 @@
 module Tiss::Model
   class CtmSpSadtGuia < Base
     # @type:
-
-    attribute :cabecalhoGuia
+    attr_accessor :cabecalhoGuia
 
     # @type: CtAutorizacaoSadt
-
-    attribute :dadosAutorizacao
+    attr_accessor :dadosAutorizacao
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: DadosSolicitante
-
-    attribute :dadosSolicitante
+    attr_accessor :dadosSolicitante
 
     # @type: DadosSolicitacao
-
-    attribute :dadosSolicitacao
+    attr_accessor :dadosSolicitacao
 
     # @type: DadosExecutante
-
-    attribute :dadosExecutante
+    attr_accessor :dadosExecutante
 
     # @type: CtmSpSadtAtendimento
-
-    attribute :dadosAtendimento
+    attr_accessor :dadosAtendimento
 
     # @type: ProcedimentosExecutados
-
-    attribute :procedimentosExecutados
+    attr_accessor :procedimentosExecutados
 
     # @type: CtOutrasDespesas
-
-    attribute :outrasDespesas
+    attr_accessor :outrasDespesas
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: CtGuiaValorTotal
-
-    attribute :valorTotal
+    attr_accessor :valorTotal
 
     # @type: AssinaturaDigital
-
-    attribute :assinaturaDigitalGuia
+    attr_accessor :assinaturaDigitalGuia
   end
 end

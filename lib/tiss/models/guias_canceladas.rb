@@ -3,7 +3,6 @@
 module Tiss::Model
   class GuiasCanceladas < Base
     # @type: DadosGuia
-
-    attribute :dadosGuia
+    attr_accessor :dadosGuia
   end
 end

@@ -3,55 +3,44 @@
 module Tiss::Model
   class CtmAnexoSolicitacaoRadio < Base
     # @type: CtAnexoCabecalho
-
-    attribute :cabecalhoAnexo
+    attr_accessor :cabecalhoAnexo
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: CtDadosComplementaresBeneficiarioRadio
-
-    attribute :dadosComplementaresBeneficiario
+    attr_accessor :dadosComplementaresBeneficiario
 
     # @type: CtmAnexoSolicitante
-
-    attribute :medicoSolicitante
+    attr_accessor :medicoSolicitante
 
     # @type: DiagnosticoOncologicoRadio
-
-    attribute :diagnosticoOncologicoRadio
+    attr_accessor :diagnosticoOncologicoRadio
 
     # @type: TratamentosAnteriores
-
-    attribute :tratamentosAnteriores
+    attr_accessor :tratamentosAnteriores
 
     # @type: ProcedimentosComplementares
-
-    attribute :procedimentosComplementares, unless: %w[V3_03_01 V3_03_02 V3_03_03 V3_04_00]
-
-    # @type: StNumerico3
-
-    attribute :numeroCampos
-
-    # @type: StNumerico4
-
-    attribute :doseCampo
-
-    # @type: StNumerico4
-
-    attribute :doseTotal
+    attr_accessor :procedimentosComplementares
 
     # @type: StNumerico3
+    attr_accessor :numeroCampos
 
-    attribute :nrDias
+    # @type: StNumerico4
+    attr_accessor :doseCampo
+
+    # @type: StNumerico4
+    attr_accessor :doseTotal
+
+    # @type: StNumerico3
+    attr_accessor :nrDias
 
     # @type: StData
-
-    attribute :dtPrevistaInicio
+    attr_accessor :dtPrevistaInicio
 
     # @type: StTexto500
+    attr_accessor :observacao
 
-    attribute :observacao
+    attribute_config :procedimentosComplementares, unless: %w[V3_03_01 V3_03_02 V3_03_03 V3_04_00]
   end
 end

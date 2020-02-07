@@ -3,31 +3,24 @@
 module Tiss::Model
   class CtIdentEquipe < Base
     # @type: DmGrauPart
-
-    attribute :grauPart
+    attr_accessor :grauPart
 
     # @type:
-
-    attribute :codProfissional
+    attr_accessor :codProfissional
 
     # @type: StTexto70
-
-    attribute :nomeProf
+    attr_accessor :nomeProf
 
     # @type: DmConselhoProfissional
-
-    attribute :conselho
+    attr_accessor :conselho
 
     # @type: StTexto15
-
-    attribute :numeroConselhoProfissional
+    attr_accessor :numeroConselhoProfissional
 
     # @type: DmUf
-
-    attribute :UF
+    attr_accessor :UF
 
     # @type: DmCbos
-
-    attribute :CBOS
+    attr_accessor :CBOS
   end
 end

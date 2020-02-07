@@ -3,7 +3,6 @@
 module Tiss::Model
   class OpmeSolicitadas < Base
     # @type: OpmeSolicitada
-
-    attribute :opmeSolicitada
+    attr_accessor :opmeSolicitada
   end
 end

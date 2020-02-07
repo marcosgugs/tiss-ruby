@@ -3,47 +3,38 @@
 module Tiss::Model
   class ProcedimentosExecutados < Base
     # @type: CtProcedimentoExecutadoInt
-
-    attribute :procedimentoExecutado
+    attr_accessor :procedimentoExecutado
 
     # @type: CtProcedimentoDados
-
-    attribute :procSolic
+    attr_accessor :procSolic
 
     # @type:
-
-    attribute :denteRegiao
+    attr_accessor :denteRegiao
 
     # @type: StTexto5
-
-    attribute :denteFace
+    attr_accessor :denteFace
 
     # @type: StNumerico2
-
-    attribute :qtdProc
-
-    # @type: StDecimal82
-
-    attribute :qtdUS
+    attr_accessor :qtdProc
 
     # @type: StDecimal82
-
-    attribute :valorProc
+    attr_accessor :qtdUS
 
     # @type: StDecimal82
+    attr_accessor :valorProc
 
-    attribute :valorFranquia
+    # @type: StDecimal82
+    attr_accessor :valorFranquia
 
     # @type: StLogico
-
-    attribute :autorizado
+    attr_accessor :autorizado
 
     # @type: StData
-
-    attribute :dataRealizacao
+    attr_accessor :dataRealizacao
 
     # @type: StNumerico4
+    attr_accessor :sequencialItem
 
-    attribute :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[V3_04_00]
   end
 end

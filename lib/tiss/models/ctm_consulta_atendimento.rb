@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtmConsultaAtendimento < Base
     # @type: StData
-
-    attribute :dataAtendimento
+    attr_accessor :dataAtendimento
 
     # @type: DmTipoConsulta
-
-    attribute :tipoConsulta
+    attr_accessor :tipoConsulta
 
     # @type: Procedimento
-
-    attribute :procedimento
+    attr_accessor :procedimento
   end
 end

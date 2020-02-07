@@ -3,31 +3,28 @@
 module Tiss::Model
   class CtAutorizacaoDados < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
-
-    # @type: StData
-
-    attribute :dataAutorizacao
+    attr_accessor :numeroGuiaPrestador
 
     # @type: StTexto20
-
-    attribute :senha
+    attr_accessor :numeroGuiaOperadora
 
     # @type: StData
+    attr_accessor :dataAutorizacao
 
-    attribute :dataValidadeSenha
+    # @type: StTexto20
+    attr_accessor :senha
+
+    # @type: StData
+    attr_accessor :dataValidadeSenha
 
     # @type: DmAusenciaCodValidacao
-
-    attribute :ausenciaCodValidacao, only: %w[V3_04_00]
+    attr_accessor :ausenciaCodValidacao
 
     # @type: StTexto10
+    attr_accessor :codValidacao
 
-    attribute :codValidacao, only: %w[V3_04_00]
+    attribute_config :ausenciaCodValidacao, only: %w[V3_04_00]
+
+    attribute_config :codValidacao, only: %w[V3_04_00]
   end
 end

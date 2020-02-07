@@ -3,47 +3,40 @@
 module Tiss::Model
   class CtmConsultaGuia < Base
     # @type: CtGuiaCabecalho
-
-    attribute :cabecalhoConsulta
+    attr_accessor :cabecalhoConsulta
 
     # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
+    attr_accessor :numeroGuiaOperadora
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type:
-
-    attribute :contratadoExecutante
+    attr_accessor :contratadoExecutante
 
     # @type: CtContratadoProfissionalDados
-
-    attribute :profissionalExecutante
+    attr_accessor :profissionalExecutante
 
     # @type: DmIndicadorAcidente
-
-    attribute :indicacaoAcidente
+    attr_accessor :indicacaoAcidente
 
     # @type: CtmConsultaAtendimento
-
-    attribute :dadosAtendimento
+    attr_accessor :dadosAtendimento
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: AssinaturaDigital
-
-    attribute :assinaturaDigitalGuia
+    attr_accessor :assinaturaDigitalGuia
 
     # @type: DmAusenciaCodValidacao
-
-    attribute :ausenciaCodValidacao, only: %w[V3_04_00]
+    attr_accessor :ausenciaCodValidacao
 
     # @type: StTexto10
+    attr_accessor :codValidacao
 
-    attribute :codValidacao, only: %w[V3_04_00]
+    attribute_config :ausenciaCodValidacao, only: %w[V3_04_00]
+
+    attribute_config :codValidacao, only: %w[V3_04_00]
   end
 end

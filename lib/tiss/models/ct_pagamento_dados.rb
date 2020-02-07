@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtPagamentoDados < Base
     # @type: StData
-
-    attribute :dataPagamento
+    attr_accessor :dataPagamento
 
     # @type: DmFormaPagamento
-
-    attribute :formaPagamento
+    attr_accessor :formaPagamento
 
     # @type: StTexto4
-
-    attribute :banco
+    attr_accessor :banco
 
     # @type: StTexto7
-
-    attribute :agencia
+    attr_accessor :agencia
 
     # @type: StTexto20
-
-    attribute :nrContaCheque
+    attr_accessor :nrContaCheque
   end
 end

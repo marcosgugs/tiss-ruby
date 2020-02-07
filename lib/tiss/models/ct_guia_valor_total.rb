@@ -3,35 +3,27 @@
 module Tiss::Model
   class CtGuiaValorTotal < Base
     # @type: StDecimal102
-
-    attribute :valorProcedimentos
-
-    # @type: StDecimal102
-
-    attribute :valorDiarias
+    attr_accessor :valorProcedimentos
 
     # @type: StDecimal102
-
-    attribute :valorTaxasAlugueis
-
-    # @type: StDecimal102
-
-    attribute :valorMateriais
+    attr_accessor :valorDiarias
 
     # @type: StDecimal102
-
-    attribute :valorMedicamentos
-
-    # @type: StDecimal102
-
-    attribute :valorOPME
+    attr_accessor :valorTaxasAlugueis
 
     # @type: StDecimal102
-
-    attribute :valorGasesMedicinais
+    attr_accessor :valorMateriais
 
     # @type: StDecimal102
+    attr_accessor :valorMedicamentos
 
-    attribute :valorTotalGeral
+    # @type: StDecimal102
+    attr_accessor :valorOPME
+
+    # @type: StDecimal102
+    attr_accessor :valorGasesMedicinais
+
+    # @type: StDecimal102
+    attr_accessor :valorTotalGeral
   end
 end

@@ -3,47 +3,36 @@
 module Tiss::Model
   class CtmProrrogacaoSolicitacaoGuia < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
+    attr_accessor :registroANS
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaPrestador
 
-    attribute :nrGuiaReferenciada
+    # @type: StTexto20
+    attr_accessor :nrGuiaReferenciada
 
     # @type: DadosBeneficiario
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: CtContratadoDados
-
-    attribute :dadosContratadoSolicitante
+    attr_accessor :dadosContratadoSolicitante
 
     # @type: CtContratadoProfissionalDados
-
-    attribute :dadosProfissionalSolicitante
+    attr_accessor :dadosProfissionalSolicitante
 
     # @type: DadosInternacao
-
-    attribute :dadosInternacao
+    attr_accessor :dadosInternacao
 
     # @type: ProcedimentosAdicionais
-
-    attribute :procedimentosAdicionais
+    attr_accessor :procedimentosAdicionais
 
     # @type: AnexoClinicoProrrogacao
-
-    attribute :anexoClinicoProrrogacao
+    attr_accessor :anexoClinicoProrrogacao
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: StData
-
-    attribute :dataSolicitacao
+    attr_accessor :dataSolicitacao
   end
 end

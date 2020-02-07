@@ -3,63 +3,50 @@
 module Tiss::Model
   class CtmAutorizacaoQuimio < Base
     # @type: CtAutorizacaoDados
-
-    attribute :dadosAutorizacao
+    attr_accessor :dadosAutorizacao
 
     # @type: StTexto20
-
-    attribute :numeroCarteira
+    attr_accessor :numeroCarteira
 
     # @type: DmStatusSolicitacao
-
-    attribute :statusSolicitacao
+    attr_accessor :statusSolicitacao
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: StTexto15
-
-    attribute :numeroCNS
+    attr_accessor :numeroCNS
 
     # @type: CtDadosComplementaresBeneficiario
-
-    attribute :dadosComplementaresBeneficiario
+    attr_accessor :dadosComplementaresBeneficiario
 
     # @type: CtmAnexoSolicitante
-
-    attribute :medicoSolicitante
+    attr_accessor :medicoSolicitante
 
     # @type: DiagnosticoOncologicoQuimioterapia
-
-    attribute :diagnosticoOncologicoQuimioterapia
+    attr_accessor :diagnosticoOncologicoQuimioterapia
 
     # @type: DrogasSolicitadas
-
-    attribute :drogasSolicitadas
+    attr_accessor :drogasSolicitadas
 
     # @type: TratamentosAnteriores
-
-    attribute :tratamentosAnteriores
-
-    # @type: StNumerico2
-
-    attribute :numeroCiclos
+    attr_accessor :tratamentosAnteriores
 
     # @type: StNumerico2
+    attr_accessor :numeroCiclos
 
-    attribute :cicloAtual
+    # @type: StNumerico2
+    attr_accessor :cicloAtual
 
     # @type: StNumerico3
-
-    attribute :intervaloCiclos
+    attr_accessor :intervaloCiclos
 
     # @type: MotivosNegativa
-
-    attribute :motivosNegativa
+    attr_accessor :motivosNegativa
 
     # @type: StNumerico3
+    attr_accessor :diasCicloAtual
 
-    attribute :diasCicloAtual, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attribute_config :diasCicloAtual, unless: %w[V3_02_00 V3_02_01 V3_02_02]
   end
 end

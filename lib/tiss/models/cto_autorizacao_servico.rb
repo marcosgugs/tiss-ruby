@@ -3,47 +3,40 @@
 module Tiss::Model
   class CtoAutorizacaoServico < Base
     # @type: CtAutorizacaoDados
-
-    attribute :dadosAutorizacao
+    attr_accessor :dadosAutorizacao
 
     # @type: StTexto20
-
-    attribute :numeroCarteira
+    attr_accessor :numeroCarteira
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: StTexto15
-
-    attribute :numeroCNS
+    attr_accessor :numeroCNS
 
     # @type: Base64Binary
-
-    attribute :identificadorBeneficiario
+    attr_accessor :identificadorBeneficiario
 
     # @type: DmStatusSolicitacao
-
-    attribute :statusSolicitacao
+    attr_accessor :statusSolicitacao
 
     # @type: CtContratadoDados
-
-    attribute :prestadorAutorizado
+    attr_accessor :prestadorAutorizado
 
     # @type: ProcedimentosAutorizados
-
-    attribute :procedimentosAutorizados
+    attr_accessor :procedimentosAutorizados
 
     # @type: MotivosNegativa
-
-    attribute :motivosNegativa
+    attr_accessor :motivosNegativa
 
     # @type: DmTipoIdent
-
-    attribute :tipoIdent, only: %w[V3_04_00]
+    attr_accessor :tipoIdent
 
     # @type: Base64Binary
+    attr_accessor :templateBiometrico
 
-    attribute :templateBiometrico, only: %w[V3_04_00]
+    attribute_config :tipoIdent, only: %w[V3_04_00]
+
+    attribute_config :templateBiometrico, only: %w[V3_04_00]
   end
 end

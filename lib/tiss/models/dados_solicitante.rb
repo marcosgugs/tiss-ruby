@@ -3,11 +3,9 @@
 module Tiss::Model
   class DadosSolicitante < Base
     # @type: CtContratadoDados
-
-    attribute :contratadoSolicitante
+    attr_accessor :contratadoSolicitante
 
     # @type: CtContratadoProfissionalDados
-
-    attribute :profissionalSolicitante
+    attr_accessor :profissionalSolicitante
   end
 end

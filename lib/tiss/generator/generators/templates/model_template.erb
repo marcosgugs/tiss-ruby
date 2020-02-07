@@ -1,16 +1,18 @@
 module Tiss::Model
   class <%= model_name %> < Base
-    <% attributes.each_key do |key| %>
-    <% attr_versions = attributes[key].map{|attr| attr[:version]} %>
-    <% versions = Tiss.config.available_versions - attr_versions %>
-      # @type: <%= attributes[key].first[:type] %>
-      <% if versions.any? && versions.count > 4 %>
-        attribute :<%= key %>, only: %w[<%= attr_versions.join(' ') %>]
-      <% elsif versions.any? && versions.count <= 4 %>
-        attribute :<%= key %>, unless: %w[<%= versions.join(' ') %>]
-      <% else %>
-      attribute :<%= key %>
-      <% end %>
-    <% end %>
+    <%- attributes.each_key do |key| %>
+    # @type: <%= attributes[key].first[:type] %>
+    attr_accessor :<%= key %>
+    <% end -%>
+
+    <%- attributes.each_key do |key| -%>
+    <%- attr_versions = attributes[key].map{|attr| attr[:version]} -%>
+    <%- versions = Tiss.config.available_versions - attr_versions -%>
+    <%- if versions.any? && versions.count > 4 -%>
+    attribute_config :<%= key %>, only: %w[<%= attr_versions.join(' ') %>]
+    <%- elsif versions.any? && versions.count <= 4 -%>
+    attribute_config :<%= key %>, unless: %w[<%= versions.join(' ') %>]
+    <%- end %>
+    <%- end -%>
   end
 end

@@ -3,31 +3,24 @@
 module Tiss::Model
   class CtGuiaDadosAnexo < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
+    attr_accessor :numeroGuiaPrestador
 
     # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
+    attr_accessor :numeroGuiaOperadora
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: StData
-
-    attribute :dataEmissao_SolicitacaoAnexo
+    attr_accessor :dataEmissao_SolicitacaoAnexo
 
     # @type: CtValorTotal
-
-    attribute :vlInformadoGuia
+    attr_accessor :vlInformadoGuia
 
     # @type: GlosaAnexo
-
-    attribute :glosaAnexo
+    attr_accessor :glosaAnexo
 
     # @type: ProcedimentosSolicitados
-
-    attribute :procedimentosSolicitados
+    attr_accessor :procedimentosSolicitados
   end
 end

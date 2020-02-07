@@ -3,19 +3,15 @@
 module Tiss::Model
   class CtmAutorizacaoProrrogacao < Base
     # @type: CtmAutorizacaoServico
-
-    attribute :autorizacaoDosServicos
+    attr_accessor :autorizacaoDosServicos
 
     # @type: StNumerico2
-
-    attribute :diariasAutorizadas
+    attr_accessor :diariasAutorizadas
 
     # @type: DmTipoAcomodacao
-
-    attribute :acomodacaoAutorizada
+    attr_accessor :acomodacaoAutorizada
 
     # @type: StTexto500
-
-    attribute :justificativaOperadora
+    attr_accessor :justificativaOperadora
   end
 end

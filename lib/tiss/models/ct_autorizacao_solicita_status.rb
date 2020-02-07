@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtAutorizacaoSolicitaStatus < Base
     # @type: CtGuiaCabecalho
-
-    attribute :identificacaoSolicitacao
+    attr_accessor :identificacaoSolicitacao
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: CtContratadoDados
-
-    attribute :dadosContratado
+    attr_accessor :dadosContratado
   end
 end

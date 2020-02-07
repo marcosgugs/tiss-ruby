@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtProtocoloRecurso < Base
     # @type: StTexto12
-
-    attribute :numeroProtocolo
+    attr_accessor :numeroProtocolo
 
     # @type: CtMotivoGlosa
-
-    attribute :glosaProtocolo
+    attr_accessor :glosaProtocolo
 
     # @type: CtGuiaRecurso
-
-    attribute :dadosGuias
+    attr_accessor :dadosGuias
   end
 end

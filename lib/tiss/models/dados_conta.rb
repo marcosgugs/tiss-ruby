@@ -3,7 +3,6 @@
 module Tiss::Model
   class DadosConta < Base
     # @type:
-
-    attribute :dadosProtocolo
+    attr_accessor :dadosProtocolo
   end
 end

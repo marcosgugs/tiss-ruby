@@ -3,51 +3,39 @@
 module Tiss::Model
   class CtRecursoGlosaRecebimento < Base
     # @type: StTexto12
-
-    attribute :nrProtocoloRecursoGlosa
-
-    # @type: StData
-
-    attribute :dataEnvioRecurso
+    attr_accessor :nrProtocoloRecursoGlosa
 
     # @type: StData
+    attr_accessor :dataEnvioRecurso
 
-    attribute :dataRecebimentoRecurso
+    # @type: StData
+    attr_accessor :dataRecebimentoRecurso
 
     # @type: StTexto12
-
-    attribute :numeroLote
+    attr_accessor :numeroLote
 
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: CtContratadoDados
-
-    attribute :dadosPrestador
+    attr_accessor :dadosPrestador
 
     # @type: StTexto12
-
-    attribute :nrProtocoloRecursado
+    attr_accessor :nrProtocoloRecursado
 
     # @type: RecursoProtocolo
-
-    attribute :recursoProtocolo
+    attr_accessor :recursoProtocolo
 
     # @type: StNumerico3
-
-    attribute :qtGuiasRecurso
+    attr_accessor :qtGuiasRecurso
 
     # @type: GuiasRecurso
-
-    attribute :guiasRecurso
+    attr_accessor :guiasRecurso
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: StDecimal102
-
-    attribute :valorTotalRecursado
+    attr_accessor :valorTotalRecursado
   end
 end

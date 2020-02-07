@@ -3,7 +3,6 @@
 module Tiss::Model
   class IdentEquipe < Base
     # @type: CtIdentEquipe
-
-    attribute :identificacaoEquipe
+    attr_accessor :identificacaoEquipe
   end
 end

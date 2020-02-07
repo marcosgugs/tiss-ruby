@@ -3,11 +3,9 @@
 module Tiss::Model
   class CtGuiaCabecalho < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
+    attr_accessor :numeroGuiaPrestador
   end
 end

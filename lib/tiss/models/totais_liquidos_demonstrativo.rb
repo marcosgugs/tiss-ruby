@@ -3,15 +3,12 @@
 module Tiss::Model
   class TotaisLiquidosDemonstrativo < Base
     # @type: StDecimal102
-
-    attribute :totalDebitosDemonstrativo
-
-    # @type: StDecimal102
-
-    attribute :totalCreditosdemonstrativo
+    attr_accessor :totalDebitosDemonstrativo
 
     # @type: StDecimal102
+    attr_accessor :totalCreditosdemonstrativo
 
-    attribute :valorLiberadoDemonstrativo
+    # @type: StDecimal102
+    attr_accessor :valorLiberadoDemonstrativo
   end
 end

@@ -3,39 +3,30 @@
 module Tiss::Model
   class CtmInternacaoDados < Base
     # @type: DmCaraterAtendimento
-
-    attribute :caraterAtendimento
+    attr_accessor :caraterAtendimento
 
     # @type: DmTipoFaturamento
-
-    attribute :tipoFaturamento
-
-    # @type: StData
-
-    attribute :dataInicioFaturamento
-
-    # @type: StHora
-
-    attribute :horaInicioFaturamento
+    attr_accessor :tipoFaturamento
 
     # @type: StData
-
-    attribute :dataFinalFaturamento
+    attr_accessor :dataInicioFaturamento
 
     # @type: StHora
+    attr_accessor :horaInicioFaturamento
 
-    attribute :horaFinalFaturamento
+    # @type: StData
+    attr_accessor :dataFinalFaturamento
+
+    # @type: StHora
+    attr_accessor :horaFinalFaturamento
 
     # @type: DmTipoInternacao
-
-    attribute :tipoInternacao
+    attr_accessor :tipoInternacao
 
     # @type: DmRegimeInternacao
-
-    attribute :regimeInternacao
+    attr_accessor :regimeInternacao
 
     # @type: Declaracoes
-
-    attribute :declaracoes
+    attr_accessor :declaracoes
   end
 end

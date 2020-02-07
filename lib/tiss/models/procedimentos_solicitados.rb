@@ -3,51 +3,39 @@
 module Tiss::Model
   class ProcedimentosSolicitados < Base
     # @type: ProcedimentoSolicitado
-
-    attribute :procedimentoSolicitado
+    attr_accessor :procedimentoSolicitado
 
     # @type: CtProcedimentoDados
-
-    attribute :procedimento
+    attr_accessor :procedimento
 
     # @type: StNumerico3
-
-    attribute :quantidadeSolicitada
+    attr_accessor :quantidadeSolicitada
 
     # @type: CtProcedimentoDados
-
-    attribute :procSolic
+    attr_accessor :procSolic
 
     # @type:
-
-    attribute :denteRegiao
+    attr_accessor :denteRegiao
 
     # @type: StTexto5
-
-    attribute :denteFace
+    attr_accessor :denteFace
 
     # @type: StNumerico2
-
-    attribute :qtdProc
+    attr_accessor :qtdProc
 
     # @type: StDecimal72
-
-    attribute :qtdUS
-
-    # @type: StDecimal82
-
-    attribute :valorProc
+    attr_accessor :qtdUS
 
     # @type: StDecimal82
+    attr_accessor :valorProc
 
-    attribute :valorFranquia
+    # @type: StDecimal82
+    attr_accessor :valorFranquia
 
     # @type: DmSimNao
-
-    attribute :aut
+    attr_accessor :aut
 
     # @type: StData
-
-    attribute :dataRealizacao
+    attr_accessor :dataRealizacao
   end
 end

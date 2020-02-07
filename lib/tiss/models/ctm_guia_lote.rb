@@ -3,11 +3,9 @@
 module Tiss::Model
   class CtmGuiaLote < Base
     # @type: StTexto12
-
-    attribute :numeroLote
+    attr_accessor :numeroLote
 
     # @type:
-
-    attribute :guiasTISS
+    attr_accessor :guiasTISS
   end
 end

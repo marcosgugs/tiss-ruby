@@ -3,11 +3,9 @@
 module Tiss::Model
   class CtOpmeDados < Base
     # @type: CtProcedimentoDados
-
-    attribute :identificacaoOPME
+    attr_accessor :identificacaoOPME
 
     # @type: StTexto70
-
-    attribute :nomeFabricante
+    attr_accessor :nomeFabricante
   end
 end

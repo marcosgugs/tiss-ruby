@@ -3,11 +3,9 @@
 module Tiss::Model
   class CtAnexoLote < Base
     # @type: StTexto12
-
-    attribute :numeroLote
+    attr_accessor :numeroLote
 
     # @type:
-
-    attribute :AnexosGuiasTISS
+    attr_accessor :AnexosGuiasTISS
   end
 end

@@ -3,47 +3,36 @@
 module Tiss::Model
   class DadosInternacao < Base
     # @type: StData
-
-    attribute :dataInicioFaturamento
+    attr_accessor :dataInicioFaturamento
 
     # @type: StData
-
-    attribute :dataFimFaturamento
+    attr_accessor :dataFimFaturamento
 
     # @type: DmCaraterAtendimento
-
-    attribute :caraterAtendimento
+    attr_accessor :caraterAtendimento
 
     # @type: DmTipoInternacao
-
-    attribute :tipoInternacao
+    attr_accessor :tipoInternacao
 
     # @type: DmRegimeInternacao
-
-    attribute :regimeInternacao
+    attr_accessor :regimeInternacao
 
     # @type: StNumerico2
-
-    attribute :qtDiariasSolicitadas
-
-    # @type: DmSimNao
-
-    attribute :indicadorOPME
+    attr_accessor :qtDiariasSolicitadas
 
     # @type: DmSimNao
+    attr_accessor :indicadorOPME
 
-    attribute :indicadorQuimio
+    # @type: DmSimNao
+    attr_accessor :indicadorQuimio
 
     # @type: StTexto500
-
-    attribute :indicacaoClinica
+    attr_accessor :indicacaoClinica
 
     # @type: StNumerico3
-
-    attribute :qtDiariasAdicionais
+    attr_accessor :qtDiariasAdicionais
 
     # @type: DmTipoAcomodacao
-
-    attribute :tipoAcomodacaoSolicitada
+    attr_accessor :tipoAcomodacaoSolicitada
   end
 end

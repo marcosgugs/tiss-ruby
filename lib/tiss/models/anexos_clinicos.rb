@@ -3,19 +3,15 @@
 module Tiss::Model
   class AnexosClinicos < Base
     # @type: CtmAutorizacaoOpme
-
-    attribute :anexoOPME
+    attr_accessor :anexoOPME
 
     # @type: CtmAutorizacaoQuimio
-
-    attribute :anexoQuimio
+    attr_accessor :anexoQuimio
 
     # @type: CtmAutorizacaoRadio
-
-    attribute :anexoRadio
+    attr_accessor :anexoRadio
 
     # @type: CtoAnexoSituacaoInicial
-
-    attribute :anexoSituacaoInicial
+    attr_accessor :anexoSituacaoInicial
   end
 end

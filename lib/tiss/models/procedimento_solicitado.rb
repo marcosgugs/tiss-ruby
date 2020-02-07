@@ -3,31 +3,24 @@
 module Tiss::Model
   class ProcedimentoSolicitado < Base
     # @type: CtProcedimentoDados
-
-    attribute :procedimento
+    attr_accessor :procedimento
 
     # @type: DmOpcaoFabricante
-
-    attribute :opcaoFabricante
-
-    # @type: StDecimal52
-
-    attribute :qtdSolicitada
-
-    # @type: StDecimal82
-
-    attribute :valorSolicitado
+    attr_accessor :opcaoFabricante
 
     # @type: StDecimal52
-
-    attribute :qtdAutorizada
+    attr_accessor :qtdSolicitada
 
     # @type: StDecimal82
+    attr_accessor :valorSolicitado
 
-    attribute :valorAutorizado
+    # @type: StDecimal52
+    attr_accessor :qtdAutorizada
+
+    # @type: StDecimal82
+    attr_accessor :valorAutorizado
 
     # @type: GlosasProcedimento
-
-    attribute :glosasProcedimento
+    attr_accessor :glosasProcedimento
   end
 end

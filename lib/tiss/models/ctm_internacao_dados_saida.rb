@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtmInternacaoDadosSaida < Base
     # @type: StTexto4
-
-    attribute :diagnostico
+    attr_accessor :diagnostico
 
     # @type: DmIndicadorAcidente
-
-    attribute :indicadorAcidente
+    attr_accessor :indicadorAcidente
 
     # @type: DmMotivoSaida
-
-    attribute :motivoEncerramento
+    attr_accessor :motivoEncerramento
   end
 end

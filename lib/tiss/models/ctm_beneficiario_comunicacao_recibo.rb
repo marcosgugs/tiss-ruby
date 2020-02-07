@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtmBeneficiarioComunicacaoRecibo < Base
     # @type: DmSimNao
-
-    attribute :statusComunicacao
+    attr_accessor :statusComunicacao
 
     # @type: CtmBeneficiarioComunicacao
-
-    attribute :beneficiarioComunicacao
+    attr_accessor :beneficiarioComunicacao
 
     # @type: CtMotivoGlosa
-
-    attribute :mensagemErro
+    attr_accessor :mensagemErro
   end
 end

@@ -3,23 +3,18 @@
 module Tiss::Model
   class IdentificacaoOpm < Base
     # @type: CtProcedimentoDados
-
-    attribute :identificacaoOPME
+    attr_accessor :identificacaoOPME
 
     # @type: StNumerico2
-
-    attribute :quantidade
+    attr_accessor :quantidade
 
     # @type: StTexto20
-
-    attribute :codigoBarra
-
-    # @type: StDecimal82
-
-    attribute :valorUnitario
+    attr_accessor :codigoBarra
 
     # @type: StDecimal82
+    attr_accessor :valorUnitario
 
-    attribute :valorTotal
+    # @type: StDecimal82
+    attr_accessor :valorTotal
   end
 end

@@ -3,27 +3,23 @@
 module Tiss::Model
   class CtDrogasSolicitadas < Base
     # @type: StData
-
-    attribute :dataProvavel
+    attr_accessor :dataProvavel
 
     # @type: CtProcedimentoDados
-
-    attribute :identificacao
+    attr_accessor :identificacao
 
     # @type: StDecimal52
-
-    attribute :qtDoses
+    attr_accessor :qtDoses
 
     # @type: DmViaAdministracao
-
-    attribute :viaAdministracao
+    attr_accessor :viaAdministracao
 
     # @type: StNumerico2
-
-    attribute :frequencia
+    attr_accessor :frequencia
 
     # @type: DmUnidadeMedida
+    attr_accessor :unidadeMedida
 
-    attribute :unidadeMedida, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attribute_config :unidadeMedida, unless: %w[V3_02_00 V3_02_01 V3_02_02]
   end
 end

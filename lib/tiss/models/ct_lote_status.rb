@@ -3,27 +3,21 @@
 module Tiss::Model
   class CtLoteStatus < Base
     # @type: DmStatusProtocolo
-
-    attribute :statusProtocolo
-
-    # @type: StTexto12
-
-    attribute :numeroProtocolo
+    attr_accessor :statusProtocolo
 
     # @type: StTexto12
+    attr_accessor :numeroProtocolo
 
-    attribute :numeroLote
+    # @type: StTexto12
+    attr_accessor :numeroLote
 
     # @type: StData
-
-    attribute :dataEnvioLote
+    attr_accessor :dataEnvioLote
 
     # @type: CtValorTotal
-
-    attribute :valorTotalLote
+    attr_accessor :valorTotalLote
 
     # @type:
-
-    attribute :guiasTISS
+    attr_accessor :guiasTISS
   end
 end

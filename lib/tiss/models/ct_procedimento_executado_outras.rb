@@ -3,59 +3,45 @@
 module Tiss::Model
   class CtProcedimentoExecutadoOutras < Base
     # @type: StData
-
-    attribute :dataExecucao
-
-    # @type: StHora
-
-    attribute :horaInicial
+    attr_accessor :dataExecucao
 
     # @type: StHora
+    attr_accessor :horaInicial
 
-    attribute :horaFinal
+    # @type: StHora
+    attr_accessor :horaFinal
 
     # @type: DmTabela
-
-    attribute :codigoTabela
+    attr_accessor :codigoTabela
 
     # @type: StTexto10
-
-    attribute :codigoProcedimento
+    attr_accessor :codigoProcedimento
 
     # @type: StDecimal74
-
-    attribute :quantidadeExecutada
+    attr_accessor :quantidadeExecutada
 
     # @type: DmUnidadeMedida
-
-    attribute :unidadeMedida
+    attr_accessor :unidadeMedida
 
     # @type: StDecimal32
-
-    attribute :reducaoAcrescimo
-
-    # @type: StDecimal82
-
-    attribute :valorUnitario
+    attr_accessor :reducaoAcrescimo
 
     # @type: StDecimal82
+    attr_accessor :valorUnitario
 
-    attribute :valorTotal
+    # @type: StDecimal82
+    attr_accessor :valorTotal
 
     # @type: StTexto150
-
-    attribute :descricaoProcedimento
+    attr_accessor :descricaoProcedimento
 
     # @type: StTexto15
-
-    attribute :registroANVISA
+    attr_accessor :registroANVISA
 
     # @type: StTexto60
-
-    attribute :codigoRefFabricante
+    attr_accessor :codigoRefFabricante
 
     # @type: StTexto30
-
-    attribute :autorizacaoFuncionamento
+    attr_accessor :autorizacaoFuncionamento
   end
 end

@@ -3,15 +3,12 @@
 module Tiss::Model
   class DadosSolicitacao < Base
     # @type: StData
-
-    attribute :dataSolicitacao
+    attr_accessor :dataSolicitacao
 
     # @type: DmCaraterAtendimento
-
-    attribute :caraterAtendimento
+    attr_accessor :caraterAtendimento
 
     # @type: StTexto500
-
-    attribute :indicacaoClinica
+    attr_accessor :indicacaoClinica
   end
 end

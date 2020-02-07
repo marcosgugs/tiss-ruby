@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtGuiaCancelamentoRecibo < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: CtContratadoDados
-
-    attribute :dadosPrestador
+    attr_accessor :dadosPrestador
 
     # @type: GuiasCanceladas
-
-    attribute :guiasCanceladas
+    attr_accessor :guiasCanceladas
   end
 end

@@ -3,15 +3,12 @@
 module Tiss::Model
   class AnexoClinicoProrrogacao < Base
     # @type: CtmAnexoSolicitacaoQuimio
-
-    attribute :solicitacaoQuimioterapia
+    attr_accessor :solicitacaoQuimioterapia
 
     # @type: CtmAnexoSolicitacaoRadio
-
-    attribute :solicitacaoRadioterapia
+    attr_accessor :solicitacaoRadioterapia
 
     # @type: CtmAnexoSolicitacaoOpme
-
-    attribute :solicitacaoOPME
+    attr_accessor :solicitacaoOPME
   end
 end

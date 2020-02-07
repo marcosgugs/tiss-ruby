@@ -3,7 +3,6 @@
 module Tiss::Model
   class Epilogo < Base
     # @type: String
-
-    attribute :hash
+    attr_accessor :hash
   end
 end

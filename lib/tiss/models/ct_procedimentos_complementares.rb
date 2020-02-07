@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtProcedimentosComplementares < Base
     # @type: StData
-
-    attribute :dataProvavel
+    attr_accessor :dataProvavel
 
     # @type: CtProcedimentoDados
-
-    attribute :identificacao
+    attr_accessor :identificacao
 
     # @type: StDecimal52
-
-    attribute :quantidade
+    attr_accessor :quantidade
   end
 end

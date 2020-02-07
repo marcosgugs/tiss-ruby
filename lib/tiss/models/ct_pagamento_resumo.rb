@@ -3,19 +3,15 @@
 module Tiss::Model
   class CtPagamentoResumo < Base
     # @type: StTexto12
-
-    attribute :numeroFatura
-
-    # @type: StTexto12
-
-    attribute :numeroLote
+    attr_accessor :numeroFatura
 
     # @type: StTexto12
+    attr_accessor :numeroLote
 
-    attribute :numeroProtocolo
+    # @type: StTexto12
+    attr_accessor :numeroProtocolo
 
     # @type: CtValorTotal
-
-    attribute :valorTotalLote
+    attr_accessor :valorTotalLote
   end
 end

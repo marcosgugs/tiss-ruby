@@ -3,47 +3,40 @@
 module Tiss::Model
   class CtContaMedicaResumo < Base
     # @type: StTexto12
-
-    attribute :numeroLotePrestador
+    attr_accessor :numeroLotePrestador
 
     # @type: StTexto12
-
-    attribute :numeroProtocolo
+    attr_accessor :numeroProtocolo
 
     # @type: StData
-
-    attribute :dataProtocolo
+    attr_accessor :dataProtocolo
 
     # @type: CtMotivoGlosa
-
-    attribute :GlosaProtocolo
+    attr_accessor :GlosaProtocolo
 
     # @type: DmStatusProtocolo
-
-    attribute :situacaoProtrocolo, only: %w[V3_02_00]
+    attr_accessor :situacaoProtrocolo
 
     # @type: RelacaoGuias
-
-    attribute :relacaoGuias
-
-    # @type: StDecimal102
-
-    attribute :valorInformadoProtocolo
+    attr_accessor :relacaoGuias
 
     # @type: StDecimal102
-
-    attribute :valorProcessadoProtocolo
-
-    # @type: StDecimal102
-
-    attribute :valorLiberadoProtocolo
+    attr_accessor :valorInformadoProtocolo
 
     # @type: StDecimal102
+    attr_accessor :valorProcessadoProtocolo
 
-    attribute :valorGlosaProtocolo
+    # @type: StDecimal102
+    attr_accessor :valorLiberadoProtocolo
+
+    # @type: StDecimal102
+    attr_accessor :valorGlosaProtocolo
 
     # @type: DmStatusProtocolo
+    attr_accessor :situacaoProtocolo
 
-    attribute :situacaoProtocolo, unless: %w[V3_02_00]
+    attribute_config :situacaoProtrocolo, only: %w[V3_02_00]
+
+    attribute_config :situacaoProtocolo, unless: %w[V3_02_00]
   end
 end

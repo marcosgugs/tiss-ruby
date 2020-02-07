@@ -3,19 +3,15 @@
 module Tiss::Model
   class CtSituacaoInicial < Base
     # @type: CtSituacaoClinica
-
-    attribute :situacaoClinica
-
-    # @type: StLogico
-
-    attribute :doencaPeriodontal
+    attr_accessor :situacaoClinica
 
     # @type: StLogico
+    attr_accessor :doencaPeriodontal
 
-    attribute :alteracaoTecidoMole
+    # @type: StLogico
+    attr_accessor :alteracaoTecidoMole
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
   end
 end

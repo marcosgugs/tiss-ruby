@@ -3,11 +3,9 @@
 module Tiss::Model
   class HipotesesDiagnosticas < Base
     # @type: StTexto4
-
-    attribute :diagnosticoCID
+    attr_accessor :diagnosticoCID
 
     # @type: DmIndicadorAcidente
-
-    attribute :indicadorAcidente
+    attr_accessor :indicadorAcidente
   end
 end

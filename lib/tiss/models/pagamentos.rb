@@ -3,7 +3,6 @@
 module Tiss::Model
   class Pagamentos < Base
     # @type: PagamentosPorData
-
-    attribute :pagamentosPorData
+    attr_accessor :pagamentosPorData
   end
 end

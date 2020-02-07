@@ -3,51 +3,41 @@
 module Tiss::Model
   class CtmAnexoSolicitacaoQuimio < Base
     # @type: CtAnexoCabecalho
-
-    attribute :cabecalhoAnexo
+    attr_accessor :cabecalhoAnexo
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: CtDadosComplementaresBeneficiario
-
-    attribute :dadosComplementaresBeneficiario
+    attr_accessor :dadosComplementaresBeneficiario
 
     # @type: CtmAnexoSolicitante
-
-    attribute :medicoSolicitante
+    attr_accessor :medicoSolicitante
 
     # @type: DiagnosticoOncologicoQuimioterapia
-
-    attribute :diagnosticoOncologicoQuimioterapia
+    attr_accessor :diagnosticoOncologicoQuimioterapia
 
     # @type: DrogasSolicitadas
-
-    attribute :drogasSolicitadas
+    attr_accessor :drogasSolicitadas
 
     # @type: TratamentosAnteriores
-
-    attribute :tratamentosAnteriores
-
-    # @type: StNumerico2
-
-    attribute :numeroCiclos
+    attr_accessor :tratamentosAnteriores
 
     # @type: StNumerico2
+    attr_accessor :numeroCiclos
 
-    attribute :cicloAtual
+    # @type: StNumerico2
+    attr_accessor :cicloAtual
 
     # @type: StNumerico3
-
-    attribute :intervaloCiclos
+    attr_accessor :intervaloCiclos
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: StNumerico3
+    attr_accessor :diasCicloAtual
 
-    attribute :diasCicloAtual, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attribute_config :diasCicloAtual, unless: %w[V3_02_00 V3_02_01 V3_02_02]
   end
 end

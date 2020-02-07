@@ -3,11 +3,9 @@
 module Tiss::Model
   class DiagnosticoOncologicoRadio < Base
     # @type: CtDiagnosticoOncologico
-
-    attribute :diagRadio
+    attr_accessor :diagRadio
 
     # @type: DmDiagnosticoImagem
-
-    attribute :diagnosticoImagem
+    attr_accessor :diagnosticoImagem
   end
 end

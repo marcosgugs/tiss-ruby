@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtmDemonstrativoPagamento < Base
     # @type: CtDemonstrativoCabecalho
-
-    attribute :cabecalhoDemonstrativo
+    attr_accessor :cabecalhoDemonstrativo
 
     # @type: DadosContratado
-
-    attribute :dadosContratado
+    attr_accessor :dadosContratado
 
     # @type: Pagamentos
-
-    attribute :pagamentos
+    attr_accessor :pagamentos
 
     # @type: TotaisDemonstrativo
-
-    attribute :totaisDemonstrativo
+    attr_accessor :totaisDemonstrativo
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
   end
 end

@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtProtocoloAnexoStatus < Base
     # @type: StRegistroAns
-
-    attribute :identificacaoOperadora
+    attr_accessor :identificacaoOperadora
 
     # @type: CtContratadoDados
-
-    attribute :dadosPrestador
+    attr_accessor :dadosPrestador
 
     # @type:
-
-    attribute :loteAnexo
+    attr_accessor :loteAnexo
   end
 end

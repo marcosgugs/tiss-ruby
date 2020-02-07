@@ -3,47 +3,36 @@
 module Tiss::Model
   class CtmRecursoGlosa < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: StTexto20
-
-    attribute :numeroGuiaRecGlosaPrestador
+    attr_accessor :numeroGuiaRecGlosaPrestador
 
     # @type: StTexto70
-
-    attribute :nomeOperadora
+    attr_accessor :nomeOperadora
 
     # @type: DmObjetoRecurso
-
-    attribute :objetoRecurso
+    attr_accessor :objetoRecurso
 
     # @type: StTexto20
-
-    attribute :numeroGuiaRecGlosaOperadora
+    attr_accessor :numeroGuiaRecGlosaOperadora
 
     # @type: CtContratadoDados
-
-    attribute :dadosContratado
+    attr_accessor :dadosContratado
 
     # @type: StTexto12
-
-    attribute :numeroLote
+    attr_accessor :numeroLote
 
     # @type: StNumerico12
-
-    attribute :numeroProtocolo
+    attr_accessor :numeroProtocolo
 
     # @type:
-
-    attribute :opcaoRecurso
+    attr_accessor :opcaoRecurso
 
     # @type: StDecimal102
-
-    attribute :valorTotalRecursado
+    attr_accessor :valorTotalRecursado
 
     # @type: StData
-
-    attribute :dataRecurso
+    attr_accessor :dataRecurso
   end
 end

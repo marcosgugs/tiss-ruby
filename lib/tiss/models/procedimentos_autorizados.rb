@@ -3,43 +3,37 @@
 module Tiss::Model
   class ProcedimentosAutorizados < Base
     # @type: CtProcedimentoDados
-
-    attribute :procSolic
+    attr_accessor :procSolic
 
     # @type:
-
-    attribute :denteRegiao
+    attr_accessor :denteRegiao
 
     # @type: StTexto5
-
-    attribute :denteFace
+    attr_accessor :denteFace
 
     # @type: StNumerico2
-
-    attribute :qtdProc
-
-    # @type: StDecimal82
-
-    attribute :qtdUS
+    attr_accessor :qtdProc
 
     # @type: StDecimal82
-
-    attribute :valorProc
+    attr_accessor :qtdUS
 
     # @type: StDecimal82
+    attr_accessor :valorProc
 
-    attribute :valorFranquia
+    # @type: StDecimal82
+    attr_accessor :valorFranquia
 
     # @type: DmSimNao
-
-    attribute :aut
+    attr_accessor :aut
 
     # @type: CtMotivoGlosa
-
-    attribute :motivosNegativa, unless: %w[V3_02_00 V3_02_01]
+    attr_accessor :motivosNegativa
 
     # @type: StNumerico4
+    attr_accessor :sequencialItem
 
-    attribute :sequencialItem, only: %w[V3_04_00]
+    attribute_config :motivosNegativa, unless: %w[V3_02_00 V3_02_01]
+
+    attribute_config :sequencialItem, only: %w[V3_04_00]
   end
 end

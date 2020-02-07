@@ -3,23 +3,18 @@
 module Tiss::Model
   class DadosPagamentoPorData < Base
     # @type: DadosPagamento
-
-    attribute :dadosPagamento
+    attr_accessor :dadosPagamento
 
     # @type: Protocolos
-
-    attribute :protocolos
+    attr_accessor :protocolos
 
     # @type: TotaisPorData
-
-    attribute :totaisPorData
+    attr_accessor :totaisPorData
 
     # @type: DebCredPorDataPagamento
-
-    attribute :debCredPorDataPagamento
+    attr_accessor :debCredPorDataPagamento
 
     # @type: TotalLiquidoPorData
-
-    attribute :totalLiquidoPorData
+    attr_accessor :totalLiquidoPorData
   end
 end

@@ -3,7 +3,6 @@
 module Tiss::Model
   class ProcedimentosRealizados < Base
     # @type:
-
-    attribute :procedimentoRealizado
+    attr_accessor :procedimentoRealizado
   end
 end

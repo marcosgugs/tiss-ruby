@@ -3,51 +3,39 @@
 module Tiss::Model
   class CtmInternacaoResumoGuia < Base
     # @type: CtGuiaCabecalho
-
-    attribute :cabecalhoGuia
+    attr_accessor :cabecalhoGuia
 
     # @type: StTexto20
-
-    attribute :numeroGuiaSolicitacaoInternacao
+    attr_accessor :numeroGuiaSolicitacaoInternacao
 
     # @type: CtAutorizacaoInternacao
-
-    attribute :dadosAutorizacao
+    attr_accessor :dadosAutorizacao
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: DadosExecutante
-
-    attribute :dadosExecutante
+    attr_accessor :dadosExecutante
 
     # @type: CtmInternacaoDados
-
-    attribute :dadosInternacao
+    attr_accessor :dadosInternacao
 
     # @type: CtmInternacaoDadosSaida
-
-    attribute :dadosSaidaInternacao
+    attr_accessor :dadosSaidaInternacao
 
     # @type: ProcedimentosExecutados
-
-    attribute :procedimentosExecutados
+    attr_accessor :procedimentosExecutados
 
     # @type: CtGuiaValorTotal
-
-    attribute :valorTotal
+    attr_accessor :valorTotal
 
     # @type: CtOutrasDespesas
-
-    attribute :outrasDespesas
+    attr_accessor :outrasDespesas
 
     # @type: StTexto500
-
-    attribute :observacao
+    attr_accessor :observacao
 
     # @type: AssinaturaDigital
-
-    attribute :assinaturaDigitalGuia
+    attr_accessor :assinaturaDigitalGuia
   end
 end

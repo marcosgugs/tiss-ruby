@@ -3,11 +3,9 @@
 module Tiss::Model
   class CtLoginSenha < Base
     # @type: StTexto20
-
-    attribute :loginPrestador
+    attr_accessor :loginPrestador
 
     # @type: StTexto32
-
-    attribute :senhaPrestador
+    attr_accessor :senhaPrestador
   end
 end

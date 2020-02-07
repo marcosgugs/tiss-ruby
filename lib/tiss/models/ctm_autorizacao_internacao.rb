@@ -3,19 +3,15 @@
 module Tiss::Model
   class CtmAutorizacaoInternacao < Base
     # @type: CtmAutorizacaoServico
-
-    attribute :autorizacaoDosServicos
+    attr_accessor :autorizacaoDosServicos
 
     # @type: StData
-
-    attribute :dataProvavelAdmissao
+    attr_accessor :dataProvavelAdmissao
 
     # @type: StNumerico3
-
-    attribute :qtdDiariasAutorizadas
+    attr_accessor :qtdDiariasAutorizadas
 
     # @type: DmTipoAcomodacao
-
-    attribute :tipoAcomodacaoAutorizada
+    attr_accessor :tipoAcomodacaoAutorizada
   end
 end

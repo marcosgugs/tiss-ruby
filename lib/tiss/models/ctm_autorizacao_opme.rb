@@ -3,27 +3,21 @@
 module Tiss::Model
   class CtmAutorizacaoOpme < Base
     # @type: CtAutorizacaoDados
-
-    attribute :dadosAutorizacao
+    attr_accessor :dadosAutorizacao
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: DmStatusSolicitacao
-
-    attribute :statusSolicitacao
+    attr_accessor :statusSolicitacao
 
     # @type: MotivosNegativa
-
-    attribute :motivosNegativa
+    attr_accessor :motivosNegativa
 
     # @type: CtContratadoDados
-
-    attribute :prestadorAutorizado
+    attr_accessor :prestadorAutorizado
 
     # @type:
-
-    attribute :servicosAutorizadosOPME
+    attr_accessor :servicosAutorizadosOPME
   end
 end

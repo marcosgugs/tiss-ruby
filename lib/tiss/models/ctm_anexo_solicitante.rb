@@ -3,15 +3,12 @@
 module Tiss::Model
   class CtmAnexoSolicitante < Base
     # @type: StTexto70
-
-    attribute :nomeProfissional
+    attr_accessor :nomeProfissional
 
     # @type: StTexto11
-
-    attribute :telefoneProfissional
+    attr_accessor :telefoneProfissional
 
     # @type: StTexto60
-
-    attribute :emailProfissional
+    attr_accessor :emailProfissional
   end
 end

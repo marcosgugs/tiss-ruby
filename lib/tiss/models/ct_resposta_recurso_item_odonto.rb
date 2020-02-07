@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtRespostaRecursoItemOdonto < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
+    attr_accessor :numeroGuiaPrestador
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaOperadora
 
-    attribute :senha
+    # @type: StTexto20
+    attr_accessor :senha
 
     # @type: StTexto70
-
-    attribute :nomeBeneficiario
+    attr_accessor :nomeBeneficiario
 
     # @type: RecursoProcedimento
-
-    attribute :recursoProcedimento
+    attr_accessor :recursoProcedimento
   end
 end

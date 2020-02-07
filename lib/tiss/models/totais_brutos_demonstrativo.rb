@@ -3,19 +3,15 @@
 module Tiss::Model
   class TotaisBrutosDemonstrativo < Base
     # @type: StDecimal102
-
-    attribute :valorInformadoBruto
-
-    # @type: StDecimal102
-
-    attribute :valorProcessadoBruto
+    attr_accessor :valorInformadoBruto
 
     # @type: StDecimal102
-
-    attribute :valorLiberadoBruto
+    attr_accessor :valorProcessadoBruto
 
     # @type: StDecimal102
+    attr_accessor :valorLiberadoBruto
 
-    attribute :valorGlosaBruto
+    # @type: StDecimal102
+    attr_accessor :valorGlosaBruto
   end
 end

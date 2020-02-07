@@ -2,7 +2,7 @@
 
 module Tiss::Generator
   class ModelGenerator < BaseGenerator
-    MODELS = {}.freeze
+    MODELS = {}
 
     def self.append(version, name, attributes)
       model = ModelGenerator::MODELS[name.to_sym] || {}
@@ -19,15 +19,12 @@ module Tiss::Generator
         model_config = models[model_name]
         attributes = model_config[:attributes].compact.uniq.group_by { |item| item[:name] }
 
-        file_content = ERB.new(template).result(binding)
+        file_content = ERB.new(template, nil, '-').result(binding)
         File.open("lib/tiss/models/#{underscore(model_name.to_s)}.rb", 'w+') do |f|
           f.write(file_content)
         end
       end
 
-      # File.open("lib/tiss/#{version}/#{version}.rb", "a") do |f|
-      #  f.puts "require_relative 'models/#{underscore(name)}'"
-      # end
     end
   end
 end

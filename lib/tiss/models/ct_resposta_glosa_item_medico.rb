@@ -3,51 +3,41 @@
 module Tiss::Model
   class CtRespostaGlosaItemMedico < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
+    attr_accessor :numeroGuiaPrestador
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaOperadora
 
-    attribute :senha
-
-    # @type: StData
-
-    attribute :dataRealizacao
+    # @type: StTexto20
+    attr_accessor :senha
 
     # @type: StData
+    attr_accessor :dataRealizacao
 
-    attribute :dataFim
+    # @type: StData
+    attr_accessor :dataFim
 
     # @type: CtProcedimentoDados
-
-    attribute :procRecurso
+    attr_accessor :procRecurso
 
     # @type: DmTipoGlosa
-
-    attribute :codGlosa
-
-    # @type: StDecimal82
-
-    attribute :valorRecursado
-
-    # @type: StTexto150
-
-    attribute :justificativaPrestador
+    attr_accessor :codGlosa
 
     # @type: StDecimal82
-
-    attribute :valorAcatadado
+    attr_accessor :valorRecursado
 
     # @type: StTexto150
+    attr_accessor :justificativaPrestador
 
-    attribute :justificativaOperadora
+    # @type: StDecimal82
+    attr_accessor :valorAcatadado
+
+    # @type: StTexto150
+    attr_accessor :justificativaOperadora
 
     # @type: StNumerico4
+    attr_accessor :sequencialItem
 
-    attribute :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[V3_04_00]
   end
 end

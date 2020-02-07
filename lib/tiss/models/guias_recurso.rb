@@ -3,19 +3,15 @@
 module Tiss::Model
   class GuiasRecurso < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaOrigem
-
-    # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
+    attr_accessor :numeroGuiaOrigem
 
     # @type: StTexto20
+    attr_accessor :numeroGuiaOperadora
 
-    attribute :senha
+    # @type: StTexto20
+    attr_accessor :senha
 
     # @type:
-
-    attribute :opcaoRecursoGuia
+    attr_accessor :opcaoRecursoGuia
   end
 end

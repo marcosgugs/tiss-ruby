@@ -3,23 +3,18 @@
 module Tiss::Model
   class CtDadosComplementaresBeneficiario < Base
     # @type: StDecimal52
-
-    attribute :peso
+    attr_accessor :peso
 
     # @type: StDecimal52
-
-    attribute :altura
+    attr_accessor :altura
 
     # @type: StDecimal42
-
-    attribute :superficieCorporal
+    attr_accessor :superficieCorporal
 
     # @type: StNumerico3
-
-    attribute :idade
+    attr_accessor :idade
 
     # @type: DmSexo
-
-    attribute :sexo
+    attr_accessor :sexo
   end
 end

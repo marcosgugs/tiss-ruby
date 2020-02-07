@@ -3,27 +3,21 @@
 module Tiss::Model
   class CtProtocoloRecebimentoAnexo < Base
     # @type: StTexto12
-
-    attribute :numeroProtocolo
+    attr_accessor :numeroProtocolo
 
     # @type: CtFontePagadora
-
-    attribute :identificacaoOperadora
+    attr_accessor :identificacaoOperadora
 
     # @type: CtContratadoDados
-
-    attribute :dadosPrestador
-
-    # @type: StTexto12
-
-    attribute :numeroLote
+    attr_accessor :dadosPrestador
 
     # @type: StTexto12
+    attr_accessor :numeroLote
 
-    attribute :dataEnvioLote
+    # @type: StTexto12
+    attr_accessor :dataEnvioLote
 
     # @type: CtProtocoloDetalheAnexo
-
-    attribute :detalheProtocolo
+    attr_accessor :detalheProtocolo
   end
 end

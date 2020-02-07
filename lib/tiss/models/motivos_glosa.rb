@@ -3,7 +3,6 @@
 module Tiss::Model
   class MotivosGlosa < Base
     # @type: CtMotivoGlosa
-
-    attribute :motivoGlosa
+    attr_accessor :motivoGlosa
   end
 end

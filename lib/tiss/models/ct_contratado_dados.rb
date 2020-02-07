@@ -3,19 +3,15 @@
 module Tiss::Model
   class CtContratadoDados < Base
     # @type: StTexto70
-
-    attribute :nomeContratado
+    attr_accessor :nomeContratado
 
     # @type: StTexto14
-
-    attribute :codigoPrestadorNaOperadora
+    attr_accessor :codigoPrestadorNaOperadora
 
     # @type: StCpf
-
-    attribute :cpfContratado
+    attr_accessor :cpfContratado
 
     # @type: StCnpj
-
-    attribute :cnpjContratado
+    attr_accessor :cnpjContratado
   end
 end

@@ -3,15 +3,12 @@
 module Tiss::Model
   class TotaisDemonstrativo < Base
     # @type: TotaisBrutosDemonstrativo
-
-    attribute :totaisBrutosDemonstrativo
+    attr_accessor :totaisBrutosDemonstrativo
 
     # @type: CtDescontos
-
-    attribute :debitosCreditosDemonstrativo
+    attr_accessor :debitosCreditosDemonstrativo
 
     # @type: TotaisLiquidosDemonstrativo
-
-    attribute :totaisLiquidosDemonstrativo
+    attr_accessor :totaisLiquidosDemonstrativo
   end
 end

@@ -3,23 +3,18 @@
 module Tiss::Model
   class CabecalhoDemonstrativoOdonto < Base
     # @type: StRegistroAns
-
-    attribute :registroANS
+    attr_accessor :registroANS
 
     # @type: StTexto12
-
-    attribute :numeroDemonstrativo
+    attr_accessor :numeroDemonstrativo
 
     # @type: StTexto70
-
-    attribute :nomeOperadora
+    attr_accessor :nomeOperadora
 
     # @type: StCnpj
-
-    attribute :cnpjOper
+    attr_accessor :cnpjOper
 
     # @type: PeriodoProc
-
-    attribute :periodoProc
+    attr_accessor :periodoProc
   end
 end

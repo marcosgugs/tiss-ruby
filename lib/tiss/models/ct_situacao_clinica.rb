@@ -3,7 +3,6 @@
 module Tiss::Model
   class CtSituacaoClinica < Base
     # @type: Dentes
-
-    attribute :dentes
+    attr_accessor :dentes
   end
 end

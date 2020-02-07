@@ -3,31 +3,24 @@
 module Tiss::Model
   class Profissionais < Base
     # @type: DmGrauPart
-
-    attribute :grauParticipacao
+    attr_accessor :grauParticipacao
 
     # @type:
-
-    attribute :codProfissional
+    attr_accessor :codProfissional
 
     # @type: StTexto70
-
-    attribute :nomeProfissional
+    attr_accessor :nomeProfissional
 
     # @type: DmConselhoProfissional
-
-    attribute :conselhoProfissional
+    attr_accessor :conselhoProfissional
 
     # @type: StTexto15
-
-    attribute :numeroConselhoProfissional
+    attr_accessor :numeroConselhoProfissional
 
     # @type: DmUf
-
-    attribute :UF
+    attr_accessor :UF
 
     # @type: DmCbos
-
-    attribute :CBO
+    attr_accessor :CBO
   end
 end

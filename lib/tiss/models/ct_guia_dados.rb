@@ -3,39 +3,34 @@
 module Tiss::Model
   class CtGuiaDados < Base
     # @type: StTexto20
-
-    attribute :numeroGuiaPrestador
+    attr_accessor :numeroGuiaPrestador
 
     # @type: StTexto20
-
-    attribute :numeroGuiaOperadora
+    attr_accessor :numeroGuiaOperadora
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: StData
-
-    attribute :dataRealizacao
+    attr_accessor :dataRealizacao
 
     # @type: CtValorTotal
-
-    attribute :vlInformadoGuia
+    attr_accessor :vlInformadoGuia
 
     # @type: GlosaGuia
-
-    attribute :glosaGuia
+    attr_accessor :glosaGuia
 
     # @type: ProcedimentosRealizados
-
-    attribute :procedimentosRealizados
+    attr_accessor :procedimentosRealizados
 
     # @type: DmAusenciaCodValidacao
-
-    attribute :ausenciaCodValidacao, only: %w[V3_04_00]
+    attr_accessor :ausenciaCodValidacao
 
     # @type: StTexto10
+    attr_accessor :codValidacao
 
-    attribute :codValidacao, only: %w[V3_04_00]
+    attribute_config :ausenciaCodValidacao, only: %w[V3_04_00]
+
+    attribute_config :codValidacao, only: %w[V3_04_00]
   end
 end

@@ -3,31 +3,24 @@
 module Tiss::Model
   class CtmAnexoSolicitacaoOpme < Base
     # @type: CtAnexoCabecalho
-
-    attribute :cabecalhoAnexo
+    attr_accessor :cabecalhoAnexo
 
     # @type: CtBeneficiarioDados
-
-    attribute :dadosBeneficiario
+    attr_accessor :dadosBeneficiario
 
     # @type: CtmAnexoSolicitante
-
-    attribute :profissionalSolicitante
+    attr_accessor :profissionalSolicitante
 
     # @type: StTexto1000
-
-    attribute :justificativaTecnica
+    attr_accessor :justificativaTecnica
 
     # @type: StTexto500
-
-    attribute :especificacaoMaterial
+    attr_accessor :especificacaoMaterial
 
     # @type: OpmeSolicitadas
-
-    attribute :opmeSolicitadas
+    attr_accessor :opmeSolicitadas
 
     # @type: StTexto500
-
-    attribute :Observacao
+    attr_accessor :Observacao
   end
 end
