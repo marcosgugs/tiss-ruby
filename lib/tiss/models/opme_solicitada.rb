@@ -1,26 +1,33 @@
-# frozen_string_literal: true
-
 module Tiss::Model
   class OpmeSolicitada < Base
+
     # @type: CtProcedimentoDados
     attr_accessor :identificacaoOPME
-
+    
     # @type: DmOpcaoFabricante
     attr_accessor :opcaoFabricante
-
+    
     # @type: StNumerico3
     attr_accessor :quantidadeSolicitada
-
+    
     # @type: StDecimal102
     attr_accessor :valorSolicitado
-
+    
     # @type: StTexto15
     attr_accessor :registroANVISA
-
+    
     # @type: StTexto60
     attr_accessor :codigoRefFabricante
-
+    
     # @type: StTexto30
     attr_accessor :autorizacaoFuncionamento
+    
+
+
+
+
+
+
+
   end
 end

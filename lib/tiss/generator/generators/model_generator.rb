@@ -4,10 +4,11 @@ module Tiss::Generator
   class ModelGenerator < BaseGenerator
     MODELS = {}
 
-    def self.append(version, name, attributes)
+    def self.append(version, name, attributes, extension)
       model = ModelGenerator::MODELS[name.to_sym] || {}
       model[:attributes] = [] unless model[:attributes].present?
       model[:attributes] = model[:attributes] + attributes.compact.map { |item| item.merge(version: version) }
+      model[:extension] = extension
 
       ModelGenerator::MODELS[name.to_sym] = model
     end

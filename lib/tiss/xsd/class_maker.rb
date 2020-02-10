@@ -75,19 +75,34 @@ module ClassMaker
   def define_class(name, node, _target)
     name = sanitize_class_name(name)
 
+    extension_class = ""
+    complex_content = select_children(node, 'complexContent')
+    extension = select_children(complex_content.first, 'extension').first
+    extension_type = extension.attributes["base"].value if extension
+    extension_class = sanitize_class_name(extension_type.split(':').last) if extension
+
     elems = []
     unless node.nil?
-      parent_node = select_children(node, 'sequence')
-      parent_node = select_children(node, 'choice') unless parent_node.empty?
 
-      choices = []
-      choices = select_children parent_node.first, 'choice' unless parent_node.empty?
-
-      elems = select_children parent_node, 'element' unless parent_node
-      unless parent_node.empty? || choices.empty?
-        elems += select_children choices.first, 'element'
+      parent_node = node
+      until parent_node.children.empty?
+        elems << select_children(parent_node.children, 'element')
+        parent_node = parent_node.children.select { |e| e.present? }.first
       end
 
+      # Take 2
+      # parent_node = select_children(node, 'sequence')
+      # parent_node = select_children(node, 'choice') if !parent_node || parent_node.empty?
+      #
+      # choices = []
+      # choices = select_children parent_node.first, 'choice' unless parent_node.empty?
+      #
+      # elems = select_children parent_node.first, 'element' unless parent_node.empty?
+      # unless parent_node.empty? || choices.empty?
+      #   elems += select_children choices.first, 'element'
+      # end
+
+      # Take 1
       # sequence = select_children node, 'sequence'
       # choices = select_children sequence.first, 'choice' unless sequence.empty?
       # elems = select_children sequence.first, 'element' unless sequence.empty?
@@ -96,13 +111,13 @@ module ClassMaker
       # end
     end
 
-    attributes = elems.map do |e|
+    attributes = elems.flatten.map do |e|
       make_definition(e, self)
     end
 
-    # return if attributes.blank?
+    return if attributes.blank?
 
-    Tiss::Generator::ModelGenerator.append(@version, name, attributes)
+    Tiss::Generator::ModelGenerator.append(@version, name, attributes, extension_class)
     name
   end
 

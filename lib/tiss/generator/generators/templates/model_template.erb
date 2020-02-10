@@ -1,5 +1,5 @@
 module Tiss::Model
-  class <%= model_name %> < Base
+  class <%= model_name %> < <%= model_config[:extension].present? ? model_config[:extension] : 'Base' %>
     <%- attributes.each_key do |key| %>
     # @type: <%= attributes[key].first[:type] %>
     attr_accessor :<%= key %>
@@ -9,9 +9,9 @@ module Tiss::Model
     <%- attr_versions = attributes[key].map{|attr| attr[:version]} -%>
     <%- versions = Tiss.config.available_versions - attr_versions -%>
     <%- if versions.any? && versions.count > 4 -%>
-    attribute_config :<%= key %>, only: %w[<%= attr_versions.join(' ') %>]
+    attribute_config :<%= key.gsub('-', '_') %>, only: %w[<%= attr_versions.join(' ') %>]
     <%- elsif versions.any? && versions.count <= 4 -%>
-    attribute_config :<%= key %>, unless: %w[<%= versions.join(' ') %>]
+    attribute_config :<%= key.gsub('-', '_') %>, unless: %w[<%= versions.join(' ') %>]
     <%- end %>
     <%- end -%>
   end
