@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class CtoGuiaOdontologia < Base
 
@@ -99,9 +100,9 @@ module Tiss::Model
 
 
 
-    attribute_config :ausenciaCodValidacao, only: %w[V3_04_00]
+    attribute_config :ausenciaCodValidacao, only: %w[3_04_00]
 
-    attribute_config :codValidacao, only: %w[V3_04_00]
+    attribute_config :codValidacao, only: %w[3_04_00]
 
   end
 end

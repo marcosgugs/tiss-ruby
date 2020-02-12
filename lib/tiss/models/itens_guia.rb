@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class ItensGuia < Base
 
@@ -40,7 +41,7 @@ module Tiss::Model
 
 
 
-    attribute_config :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[3_04_00]
 
   end
 end

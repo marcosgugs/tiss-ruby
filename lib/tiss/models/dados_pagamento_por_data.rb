@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class DadosPagamentoPorData < Base
 

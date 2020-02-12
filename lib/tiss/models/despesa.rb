@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class Despesa < Base
 
@@ -15,9 +16,9 @@ module Tiss::Model
     
 
 
-    attribute_config :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[3_04_00]
 
-    attribute_config :itemVinculado, only: %w[V3_04_00]
+    attribute_config :itemVinculado, only: %w[3_04_00]
 
   end
 end

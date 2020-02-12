@@ -24,6 +24,8 @@ module Tiss
       end
 
       def attributes_by(version)
+        version = version.gsub('.', '_')
+
         attributes.map do |key|
           config = attribute_configs.find { |i| i[:name] == key }
 

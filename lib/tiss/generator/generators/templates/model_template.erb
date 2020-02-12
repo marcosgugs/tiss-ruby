@@ -1,8 +1,12 @@
+<%- if model_config[:extension].present? -%>
+require_relative '<%= model_config[:extension][:file] %>'
+<%- end -%>
+
 module Tiss::Model
-  class <%= model_name %> < <%= model_config[:extension].present? ? model_config[:extension] : 'Base' %>
+  class <%= model_name %> < <%= model_config[:extension].present? ? model_config[:extension][:class] : 'Base' %>
     <%- attributes.each_key do |key| %>
     # @type: <%= attributes[key].first[:type] %>
-    attr_accessor :<%= key %>
+    attr_accessor :<%= key.gsub('-', '_') %>
     <% end -%>
 
     <%- attributes.each_key do |key| -%>

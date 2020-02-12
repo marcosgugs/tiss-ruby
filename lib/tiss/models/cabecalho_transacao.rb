@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class CabecalhoTransacao < Base
 
@@ -38,14 +39,14 @@ module Tiss::Model
 
 
 
-    attribute_config :versaoPadrao, only: %w[V3_02_00 V3_02_01]
+    attribute_config :versaoPadrao, only: %w[3_02_00 3_02_01]
 
 
 
 
 
 
-    attribute_config :Padrao, unless: %w[V3_02_00 V3_02_01]
+    attribute_config :Padrao, unless: %w[3_02_00 3_02_01]
 
   end
 end

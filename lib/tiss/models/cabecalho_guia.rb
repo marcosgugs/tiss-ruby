@@ -1,3 +1,5 @@
+require_relative 'ct_guia_cabecalho'
+
 module Tiss::Model
   class CabecalhoGuia < CtGuiaCabecalho
 

@@ -2,13 +2,19 @@
 
 module Tiss::Generator
   class ModelGenerator < BaseGenerator
+    class << self
+      include ActiveSupport::Inflector
+    end
+
     MODELS = {}
 
     def self.append(version, name, attributes, extension)
       model = ModelGenerator::MODELS[name.to_sym] || {}
       model[:attributes] = [] unless model[:attributes].present?
       model[:attributes] = model[:attributes] + attributes.compact.map { |item| item.merge(version: version) }
-      model[:extension] = extension
+      if extension.present?
+        model[:extension] = { class: extension, file: underscore(extension) }
+      end
 
       ModelGenerator::MODELS[name.to_sym] = model
     end
@@ -25,7 +31,6 @@ module Tiss::Generator
           f.write(file_content)
         end
       end
-
     end
   end
 end

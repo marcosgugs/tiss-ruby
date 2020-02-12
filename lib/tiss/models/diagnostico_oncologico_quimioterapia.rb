@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class DiagnosticoOncologicoQuimioterapia < Base
 
@@ -22,11 +23,11 @@ module Tiss::Model
 
 
 
-    attribute_config :tumor, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attribute_config :tumor, unless: %w[3_02_00 3_02_01 3_02_02]
 
-    attribute_config :nodulo, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attribute_config :nodulo, unless: %w[3_02_00 3_02_01 3_02_02]
 
-    attribute_config :metastase, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attribute_config :metastase, unless: %w[3_02_00 3_02_01 3_02_02]
 
   end
 end

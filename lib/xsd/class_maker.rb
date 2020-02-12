@@ -40,7 +40,7 @@ module ClassMaker
   private
 
   def namespace_of(node)
-    node.namespace&.href
+    node.namespace.href
   end
 
   def is_text(node)
@@ -67,10 +67,6 @@ module ClassMaker
     is_xml_schema_node(node) && (node.name == 'complexType')
   end
 
-  def is_father(node)
-    is_xml_schema_node(node) && (node.name == 'complexType')
-  end
-
   def sanitize_class_name(name)
     name = underscore(name)
     camelize(name.to_s.sub(/.*\./, ''))
@@ -90,16 +86,11 @@ module ClassMaker
     elems = []
     unless node.nil?
 
-      if name == 'ProcedimentoRealizado'
-        binding.pry
-      end
-
       parent_node = node
       until parent_node.children.empty?
         elems << select_children(parent_node.children, 'element')
         parent_node = parent_node.children.select(&:present?).first
       end
-
 
       # Take 2
       # parent_node = select_children(node, 'sequence')
@@ -130,20 +121,6 @@ module ClassMaker
 
     Tiss::Generator::ModelGenerator.append(@version, name, attributes, extension_class)
     name
-  end
-
-  def elements_by_node(node)
-    elems = []
-    node.children.each do |element|
-      next if element.nil?
-
-      if is_element(element)
-        elems << element
-        next
-      end
-      elems << elements_by_node(element)
-    end
-    elems.flatten.compact
   end
 
   def define_validator(name, restrictions, target)

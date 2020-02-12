@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class CtReciboCancelaGuia < Base
 

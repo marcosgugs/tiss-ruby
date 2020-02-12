@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class CtRespostaGlosaGuiaMedica < Base
 
@@ -28,7 +29,7 @@ module Tiss::Model
 
 
 
-    attribute_config :justificativaOPSnaoAcatadoGuia, unless: %w[V3_02_00 V3_02_01 V3_02_02]
+    attribute_config :justificativaOPSnaoAcatadoGuia, unless: %w[3_02_00 3_02_01 3_02_02]
 
   end
 end

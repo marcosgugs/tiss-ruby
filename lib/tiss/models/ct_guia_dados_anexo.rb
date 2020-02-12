@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class CtGuiaDadosAnexo < Base
 

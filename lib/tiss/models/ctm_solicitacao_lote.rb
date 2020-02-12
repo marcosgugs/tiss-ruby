@@ -1,8 +1,9 @@
+
 module Tiss::Model
   class CtmSolicitacaoLote < Base
 
     # @type: CtmSpSadtSolicitacaoGuia
-    attr_accessor :solicitacaoSP-SADT
+    attr_accessor :solicitacaoSP_SADT
     
     # @type: CtmInternacaoSolicitacaoGuia
     attr_accessor :solicitacaoInternacao

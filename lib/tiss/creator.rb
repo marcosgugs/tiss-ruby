@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Tiss
   class Creator
     def self.[](version)
@@ -7,9 +5,11 @@ module Tiss
     end
 
     attr_reader :version
+    attr_reader :hash
 
     def initialize(version)
-      @version = version
+      @version = version.gsub('.', '_')
+      @hash = ''
     end
 
     def build(object)
@@ -24,21 +24,26 @@ module Tiss
       attributes = object.attributes_by(version)
       attributes.each_key do |attribute|
         value = attributes[attribute]
-        next if value.nil?
+        next unless value.present?
 
         if value.is_a? Tiss::Model::Base
           xml.send(attribute) do
             populate_object(xml, value, version)
           end
         elsif value.is_a?(Array)
-          xml.send(attribute) do
+          # xml.send(attribute) do
             value.each do |array_value|
               xml.send(attribute) do
                 populate_object(xml, array_value, version)
               end
             end
-          end
+          # end
         else
+
+          if attribute.to_s === 'hash'
+            attribute = 'hash_'.to_sym
+          end
+
           xml.send(attribute, value)
         end
       end

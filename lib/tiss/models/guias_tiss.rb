@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class GuiasTiss < Base
 
@@ -11,7 +12,7 @@ module Tiss::Model
     attr_accessor :guias
     
     # @type: CtmSpSadtGuia
-    attr_accessor :guiaSP-SADT
+    attr_accessor :guiaSP_SADT
     
     # @type: CtmInternacaoResumoGuia
     attr_accessor :guiaResumoInternacao

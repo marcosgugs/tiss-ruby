@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class CtContaMedicaResumo < Base
 
@@ -38,14 +39,14 @@ module Tiss::Model
 
 
 
-    attribute_config :situacaoProtrocolo, only: %w[V3_02_00]
+    attribute_config :situacaoProtrocolo, only: %w[3_02_00]
 
 
 
 
 
 
-    attribute_config :situacaoProtocolo, unless: %w[V3_02_00]
+    attribute_config :situacaoProtocolo, unless: %w[3_02_00]
 
   end
 end

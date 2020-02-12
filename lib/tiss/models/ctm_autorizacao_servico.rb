@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class CtmAutorizacaoServico < Base
 
@@ -40,7 +41,7 @@ module Tiss::Model
 
 
 
-    attribute_config :tipoEtapaAutorizacao, only: %w[V3_04_00]
+    attribute_config :tipoEtapaAutorizacao, only: %w[3_04_00]
 
   end
 end

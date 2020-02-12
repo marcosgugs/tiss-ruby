@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class CtoAutorizacaoServico < Base
 
@@ -43,9 +44,9 @@ module Tiss::Model
 
 
 
-    attribute_config :tipoIdent, only: %w[V3_04_00]
+    attribute_config :tipoIdent, only: %w[3_04_00]
 
-    attribute_config :templateBiometrico, only: %w[V3_04_00]
+    attribute_config :templateBiometrico, only: %w[3_04_00]
 
   end
 end

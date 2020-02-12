@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class ProcedimentosAutorizados < Base
 
@@ -39,9 +40,9 @@ module Tiss::Model
 
 
 
-    attribute_config :motivosNegativa, unless: %w[V3_02_00 V3_02_01]
+    attribute_config :motivosNegativa, unless: %w[3_02_00 3_02_01]
 
-    attribute_config :sequencialItem, only: %w[V3_04_00]
+    attribute_config :sequencialItem, only: %w[3_04_00]
 
   end
 end

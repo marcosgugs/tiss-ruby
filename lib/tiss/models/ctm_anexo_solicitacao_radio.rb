@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class CtmAnexoSolicitacaoRadio < Base
 
@@ -46,7 +47,7 @@ module Tiss::Model
 
 
 
-    attribute_config :procedimentosComplementares, unless: %w[V3_03_01 V3_03_02 V3_03_03 V3_04_00]
+    attribute_config :procedimentosComplementares, unless: %w[3_03_01 3_03_02 3_03_03 3_04_00]
 
 
 

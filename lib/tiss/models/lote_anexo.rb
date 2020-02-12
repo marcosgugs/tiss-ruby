@@ -1,3 +1,4 @@
+
 module Tiss::Model
   class LoteAnexo < Base
 
