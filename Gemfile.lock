@@ -4,7 +4,6 @@ PATH
     tiss-ruby (0.1.0)
       activemodel
       activesupport
-      awesome_print (~> 1.6.1, ~> 1.6)
       dry-configurable
       nokogiri
 
@@ -94,6 +93,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print (~> 1.6.1, ~> 1.6)
   bundler (~> 1.16)
   pry
   pry-coolline

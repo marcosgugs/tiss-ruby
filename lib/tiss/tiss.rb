@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 require 'date'
-require 'awesome_print'
 require 'dry-configurable'
-require 'pry'
 require 'nokogiri'
 
 require_relative 'constants'

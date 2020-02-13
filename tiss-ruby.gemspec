@@ -44,11 +44,12 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.79.0'
   spec.add_development_dependency 'rubocop-rspec'
+  spec.add_development_dependency 'awesome_print', '~> 1.6', '~> 1.6.1'
 
   spec.add_dependency 'activemodel'
   spec.add_dependency 'activesupport'
   spec.add_dependency 'dry-configurable'
   spec.add_dependency 'nokogiri'
 
-  spec.add_dependency 'awesome_print', '~> 1.6', '~> 1.6.1'
+
 end
