@@ -8,7 +8,7 @@ require_relative 'constants'
 require_relative 'xsd/convert'
 require_relative 'generator/generator'
 require_relative 'model'
-require_relative 'creator'
+require_relative 'xml_creator'
 
 
 Dir[File.join(__dir__, 'models', '*.rb')].sort.each { |file| require file }

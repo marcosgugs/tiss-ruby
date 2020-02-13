@@ -1,7 +1,7 @@
 module Tiss
-  class Creator
+  class XmlCreator
     def self.[](version)
-      Creator.new(version)
+      XmlCreator.new(version)
     end
 
     attr_reader :version
