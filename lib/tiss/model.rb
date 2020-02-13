@@ -20,7 +20,7 @@ module Tiss
       end
 
       def attributes
-        self.class.attributes
+        (self.class.ancestors&.second&.attributes || []) + self.class.attributes
       end
 
       def attributes_by(version)

@@ -8,9 +8,6 @@ module Tiss::Model
     # @type: GuiasOdonto
     attr_accessor :guiasOdonto
     
-    # @type: CtGuiaDados
-    attr_accessor :guias
-    
     # @type: CtmSpSadtGuia
     attr_accessor :guiaSP_SADT
     
@@ -26,7 +23,6 @@ module Tiss::Model
     # @type: CtoGuiaOdontologia
     attr_accessor :guiaOdonto
     
-
 
 
 

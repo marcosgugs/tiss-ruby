@@ -6,10 +6,12 @@ require 'dry-configurable'
 require 'pry'
 require 'nokogiri'
 
+require_relative 'constants'
 require_relative 'xsd/convert'
 require_relative 'generator/generator'
 require_relative 'model'
 require_relative 'creator'
+
 
 Dir[File.join(__dir__, 'models', '*.rb')].sort.each { |file| require file }
 

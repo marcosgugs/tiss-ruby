@@ -38,10 +38,6 @@ module Tiss::Model
     # @type: AssinaturaDigital
     attr_accessor :assinaturaDigitalGuia
     
-    # @type: StTexto20
-    attr_accessor :guiaPrincipal
-    
-
 
 
 

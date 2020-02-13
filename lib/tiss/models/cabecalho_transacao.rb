@@ -20,18 +20,6 @@ module Tiss::Model
     # @type: CtLoginSenha
     attr_accessor :loginSenhaPrestador
     
-    # @type: DmTipoTransacao
-    attr_accessor :tipoTransacao
-    
-    # @type: StTexto12
-    attr_accessor :sequencialTransacao
-    
-    # @type: StData
-    attr_accessor :dataRegistroTransacao
-    
-    # @type: StHora
-    attr_accessor :horaRegistroTransacao
-    
     # @type: DmVersao
     attr_accessor :Padrao
     
@@ -40,10 +28,6 @@ module Tiss::Model
 
 
     attribute_config :versaoPadrao, only: %w[3_02_00 3_02_01]
-
-
-
-
 
 
     attribute_config :Padrao, unless: %w[3_02_00 3_02_01]

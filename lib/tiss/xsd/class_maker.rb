@@ -90,15 +90,15 @@ module ClassMaker
     elems = []
     unless node.nil?
 
-      if name == 'ProcedimentoRealizado'
-        binding.pry
-      end
+      # Take 4
+      elems = elements_by_node(node)
 
-      parent_node = node
-      until parent_node.children.empty?
-        elems << select_children(parent_node.children, 'element')
-        parent_node = parent_node.children.select(&:present?).first
-      end
+      # Take 3
+      # parent_node = node
+      # until parent_node.children.empty?
+      #   elems << select_children(parent_node.children, 'element')
+      #   parent_node = parent_node.children.select(&:present?).first
+      # end
 
 
       # Take 2

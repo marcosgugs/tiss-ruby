@@ -11,14 +11,6 @@ module Tiss::Model
     # @type: StTexto7
     attr_accessor :cnes
     
-    # @type: StTexto14
-    attr_accessor :codigoNaOperadora
-    
-    # @type: StCnpj
-    attr_accessor :cnpjLocalExecutante
-    
-
-
 
 
 

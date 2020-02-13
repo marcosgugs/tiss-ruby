@@ -8,10 +8,6 @@ module Tiss::Model
     # @type: StDecimal102
     attr_accessor :vlGlosaProtocolo
     
-    # @type: CtMotivoGlosa
-    attr_accessor :motivoGlosa
-    
-
 
 
   end

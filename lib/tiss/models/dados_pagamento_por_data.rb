@@ -17,22 +17,6 @@ module Tiss::Model
     # @type: TotalLiquidoPorData
     attr_accessor :totalLiquidoPorData
     
-    # @type: StData
-    attr_accessor :dataPagamento
-    
-    # @type: StTexto4
-    attr_accessor :banco
-    
-    # @type: StTexto7
-    attr_accessor :agencia
-    
-    # @type: StTexto20
-    attr_accessor :conta
-    
-
-
-
-
 
 
 

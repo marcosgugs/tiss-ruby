@@ -29,26 +29,6 @@ module Tiss::Model
     # @type: StTexto500
     attr_accessor :observacao
     
-    # @type: StRegistroAns
-    attr_accessor :registroANS
-    
-    # @type: StTexto12
-    attr_accessor :numeroDemonstrativo
-    
-    # @type: StTexto70
-    attr_accessor :nomeOperadora
-    
-    # @type: StCnpj
-    attr_accessor :cnpjOper
-    
-    # @type: PeriodoProc
-    attr_accessor :periodoProc
-    
-
-
-
-
-
 
 
 

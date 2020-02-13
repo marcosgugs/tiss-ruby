@@ -8,24 +8,6 @@ module Tiss::Model
     # @type: CtProcedimentoDados
     attr_accessor :procedimento
     
-    # @type: DmOpcaoFabricante
-    attr_accessor :opcaoFabricante
-    
-    # @type: StDecimal52
-    attr_accessor :qtdSolicitada
-    
-    # @type: StDecimal82
-    attr_accessor :valorSolicitado
-    
-    # @type: StDecimal52
-    attr_accessor :qtdAutorizada
-    
-    # @type: StDecimal82
-    attr_accessor :valorAutorizado
-    
-    # @type: GlosasProcedimento
-    attr_accessor :glosasProcedimento
-    
     # @type: StNumerico3
     attr_accessor :quantidadeSolicitada
     
@@ -56,12 +38,6 @@ module Tiss::Model
     # @type: StData
     attr_accessor :dataRealizacao
     
-
-
-
-
-
-
 
 
 

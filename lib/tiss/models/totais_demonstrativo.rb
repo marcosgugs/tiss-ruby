@@ -11,22 +11,6 @@ module Tiss::Model
     # @type: TotaisLiquidosDemonstrativo
     attr_accessor :totaisLiquidosDemonstrativo
     
-    # @type: StDecimal102
-    attr_accessor :valorInformadoBruto
-    
-    # @type: StDecimal102
-    attr_accessor :valorProcessadoBruto
-    
-    # @type: StDecimal102
-    attr_accessor :valorLiberadoBruto
-    
-    # @type: StDecimal102
-    attr_accessor :valorGlosaBruto
-    
-
-
-
-
 
 
 
