@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tiss-ruby (0.2.0)
+    tiss-ruby (0.2.1)
       activemodel
       activesupport
       dry-configurable
