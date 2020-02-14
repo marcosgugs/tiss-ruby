@@ -8,6 +8,7 @@ require_relative 'constants'
 require_relative 'xsd/convert'
 require_relative 'generator/generator'
 require_relative 'model'
+require_relative 'utils'
 require_relative 'xml_creator'
 
 
