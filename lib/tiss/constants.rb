@@ -66,7 +66,8 @@ module Tiss
       '3.03.01' => CR_TYPE_MAP_V3,
       '3.03.02' => CR_TYPE_MAP_V3,
       '3.03.03' => CR_TYPE_MAP_V3,
-      '3.04.00' => CR_TYPE_MAP_V3
+      '3.04.00' => CR_TYPE_MAP_V3,
+      '3.05.00' => CR_TYPE_MAP_V3
     }
 
     ENVIO_LOTE_GUIAS = "ENVIO_LOTE_GUIAS"

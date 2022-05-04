@@ -18,7 +18,7 @@ module Tiss
   extend Dry::Configurable
 
   setting :default_version, '3_02_00'
-  setting :available_versions, %w[3_02_00 3_02_01 3_02_02 3_03_01 3_03_02 3_03_03 3_04_00]
+  setting :available_versions, %w[3_02_00 3_02_01 3_02_02 3_03_01 3_03_02 3_03_03 3_04_00 3_05_00]
 
   # TODO: Refactor this
   class ConvertFromXsd
